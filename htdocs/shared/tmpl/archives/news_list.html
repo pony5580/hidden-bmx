@@ -1,0 +1,46 @@
+<$mt:Var name="page_layout" value="layout-wm"$>
+
+<mt:SetVarBlock name="page_title"><$mt:ArchiveTitle$>Archive</mt:SetVarBlock>
+<mt:SetVarBlock name="title"><$mt:BlogName encode_html="1"$>: <$mt:Var name="page_title"$></mt:SetVarBlock>
+<mt:Unless name="datebased_archive"><$mt:Var name="limit" value="auto"$></mt:Unless>
+<mt:If name="datebased_archive">
+    <mt:SetVarBlock name="html_head">
+        <mt:ArchivePrevious><link rel="prev" href="<$mt:ArchiveLink$>" title="<$mt:ArchiveTitle encode_html="1"$>" /></mt:ArchivePrevious>
+        <mt:ArchiveNext><link rel="next" href="<$mt:ArchiveLink$>" title="<$mt:ArchiveTitle encode_html="1"$>" /></mt:ArchiveNext>
+    </mt:SetVarBlock>
+</mt:If>
+
+<mt:SetVarBlock name="body_class">mt-archive-listing mt-<$mt:Var name="archive_class"$></mt:SetVarBlock>
+<$mt:Include module="ヘッダー" body_class="$body_class"$>
+
+<$mt:Include module="パンクズ"$>
+
+<h1 id="page-title" class="archive-title">
+<mt:Unless name="datebased_archive">
+    <mt:IfArchiveType archive_type="Category">
+<em><$mt:ArchiveTitle$></em>の最近のブログ記事
+    </mt:IfArchiveType>
+    <mt:IfArchiveType archive_type="Author">
+<em><$mt:ArchiveTitle$></em>による最近のブログ記事
+    </mt:IfArchiveType>
+<mt:Else>
+<$mt:Var name="page_title"$>
+</mt:Unless>
+</h1>
+
+<mt:Entries limit="$limit">
+<$mt:Include module="ニュース記事の概要"$>
+</mt:Entries>
+
+<div class="content-nav">
+    <mt:ArchivePrevious>
+    <a href="<$mt:ArchiveLink$>">&laquo; <$mt:ArchiveTitle$></a> |
+    </mt:ArchivePrevious>
+    <a href="<$mt:Link template="main_index"$>">メインページ</a> |
+    <a href="<$mt:Link template="archive_index"$>">アーカイブ</a>
+    <mt:ArchiveNext>
+    | <a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$> &raquo;</a>
+    </mt:ArchiveNext>
+</div>
+
+<$mt:Include module="フッター"$>

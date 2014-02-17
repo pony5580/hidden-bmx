@@ -1,0 +1,88 @@
+<mt:Ignore>
+/*======================================================
+// 2COLの場合
+========================================================*/
+</mt:Ignore>
+<mt:SetVarBlock name="blog_id"><$MTBlogID$></mt:SetVarBlock>
+<mt:If name="page_columns" eq="2">
+<div id="beta">
+<div id="beta-inner">
+  
+<!--
+    <div class="widget-ad widget">
+    <h3 class="widget-header">ADVERTISEMENT</h3>
+      <div class="widget-content" id="ad-large">
+      <a href="hogehoge"><img src="" width="300"  alt="" /></a>
+      </div>
+    </div>
+-->
+<!-- ad -->
+<!--#include virtual="/shared/include/ad.html" -->
+<!-- ad -->
+    
+<div id="archivesWrp"></div>
+
+    <mt:Ignore>
+    <$mt:WidgetSet name="メインサイドバー２"$>
+    </mt:Ignore>
+    
+  </div>
+</div>
+<!-- beta end -->
+</mt:If>
+<mt:Ignore>
+/*======================================================
+========================================================*/
+</mt:Ignore>
+
+<mt:Ignore>
+/*======================================================
+// 3COLの場合
+========================================================*/
+</mt:Ignore>
+<mt:If name="page_columns" eq="3">
+<div id="beta-wrp">
+  
+  <mt:Ignore>
+  /*======================================================
+  // ビック広告　
+  ========================================================*/
+  </mt:Ignore>
+   <div class="widget-ad widget">
+   <h3 class="widget-header">ADVERTISEMENT</h3>
+   <div class="widget-content" id="ad-large">
+       <a href="/"><img src="" width="300" alt="" /></a>
+       </div>
+   </div>
+  <mt:Ignore>
+  /*======================================================
+  ========================================================*/
+  </mt:Ignore>
+  <div id="beta">
+    <div id="beta-inner">
+    
+    <$mt:WidgetSet name="サブサイドバー"$>
+    
+    </div>
+  </div>
+  <!-- beta end -->
+  
+  <div id="gamma">
+    <div id="gamma-inner">
+      <div class="widget-ad2 widget">
+      <h3 class="widget-header">ADVERTISEMENT</h3>
+        <div class="widget-content">
+        <a href=""><img src="/shared/images/ad/long_01.jpg" width="140" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- gamma end -->
+  </div>
+  <!-- beta wrp end -->
+
+</mt:If>
+<mt:Ignore>
+/*======================================================
+========================================================*/
+</mt:Ignore>

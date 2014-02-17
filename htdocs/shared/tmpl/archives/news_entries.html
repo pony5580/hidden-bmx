@@ -1,0 +1,48 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+<$mt:Var name="page_layout" value="layout-wm"$>
+<mt:SetVarBlock name="title"><$mt:BlogName encode_html="1"$></mt:SetVarBlock>
+<$mt:Include module="ヘッダー" body_id="page-news-entry"$>
+<div id="content" class="at">
+<div id="content-inner">
+<div id="breadcrumb">
+<span><a href="/">Home</a></span> &gt;
+<span><a href="/news/">News</a></span> &gt;
+<span><mt:EntryTitle></span>
+</div>
+<div id="alpha">
+<div id="alpha-inner">
+<h3 class="widget-header" id="news-page-title">News</h3>
+
+
+<$mt:Include module="ニュース記事の詳細"$>
+
+　　　<$mt:Include module="トラックバック"$>
+
+　　　<$mt:Include module="コメント"$>
+
+<!-- widget-news end -->
+</div>
+</div>
+<!-- alpha end -->
+
+<$mt:Include module="サイドバー２"$>
+
+</div>
+</div>
+<mt:SetVarBlock name="html_footer">
+<script type="text/javascript" src="/shared/js/plugin/jScrollPane.js"></script>
+<script type="text/javascript">
+$(function(){
+   mainSideArchivesNew();
+})
+</script>
+<script type="text/javascript" src="/CMS/mt/mt-period.cgi?<$MTBlogID$>"></script>
+<script type="text/javascript">
+<!--
+mtAttachEvent("load", mtEntryOnLoad);
+mtAttachEvent("unload", mtEntryOnUnload);
+//-->
+</script>
+</mt:SetVarBlock>
+<$mt:Include module="フッター"$>
+</MTApplyModifier>

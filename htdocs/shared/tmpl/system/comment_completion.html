@@ -1,0 +1,43 @@
+<$mt:Var name="page_layout" value="layout-wm"$>
+
+<mt:If name="comment_confirmation">
+    <$mt:Var name="page_title" value="確認"$>
+    <$mt:Var name="message" value="コメントを投稿しました。"$>
+<mt:Else name="comment_pending">
+    <$mt:Var name="page_title" value="コメントありがとうございます。"$>
+    <$mt:Var name="message" value="コメントは現在承認されるまで公開を保留されています。"$>
+<mt:Else name="comment_error">
+    <$mt:Var name="page_title" value="コメント投稿エラー"$>
+    <mt:SetVarBlock name="message">コメントを投稿できませんでした。エラー: <$mt:ErrorMessage$></mt:SetVarBlock>
+</mt:If>
+<mt:SetVarBlock name="title"><$mt:BlogName encode_html="1"$>: <$mt:Var name="page_title"$></mt:SetVarBlock>
+<mt:SetVarBlock name="html_footer">
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var user = <$mt:UserSessionState$>;
+    var is_preview = true;
+    /* ]]> */
+    </script>
+</mt:SetVarBlock>
+
+<$mt:Include module="ヘッダー" body_id="page-comment"$>
+
+<div id="content">
+<div id="content-inner">
+
+<div id="breadcrumb">
+<span><a href="/">HOME</a></span> &gt;
+<span><a href="/blog/">BLOG</a></span> &gt;
+<span><$mt:Var name="message"$></span>
+</div>
+
+<h1 id="page-title" style="border-top: 1px solid #000; padding-top: 9px;"><$mt:Var name="page_title"$></h1>
+<div class="commentWrp" style="text-align: center; padding: 100px 0px;">
+<p  style=" font-size: 200%; line-height:1; margin-bottom: 30px;"><$mt:Var name="message"$></p>
+<a href="<mt:If name="comment_error">javascript:history.back()<mt:Else><$mt:EntryLink$></mt:If>" class="btn" style="width: 10em; margin: 0px auto; font-size: 120%;">元の記事に戻る</a>
+</div>
+
+</div>
+</div>
+
+<$mt:Include module="フッター"$>

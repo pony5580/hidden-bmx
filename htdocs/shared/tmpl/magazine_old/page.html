@@ -1,0 +1,91 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<$mt:Var name="page_layout" value="layout-wtt"$>
+<mt:SetVarBlock name="nav_on"><$mt:PageID$></mt:SetVarBlock>
+
+<mt:SetVarBlock name="title"><$mt:PageTitle remove_html="1"$> - <$mt:BlogName encode_html="1"$></mt:SetVarBlock>
+<mt:SetVarBlock name="html_head"><$mt:EntryTrackbackData$></mt:SetVarBlock>
+
+<$mt:Include module="ヘッダー" body_class="mt-page-archive"$>
+
+<$mt:Include module="パンクズ"$>	
+
+<div class="widget-magazine widget">
+
+
+<div class="asset-header">
+<h3>MAGAZINE</h3>
+</div>
+
+<div id="page-<$mt:PageID$>" class="page-asset asset">
+   
+	 <mt:Ignore>
+	 //**************************************
+	 // issue cover image
+	 //**************************************
+	 </mt:Ignore>
+	 <div id="cover">
+	 
+	<MTIfNonEmpty tag="pagedatamagazine_index_image">
+		<MTpagedatamagazine_index_imageAsset>
+			<img src="<$MTAssetThumbnailURL width="568"$>" />
+		</MTpagedatamagazine_index_imageAsset>
+	</MTIfNonEmpty>
+	</div>
+
+	 <mt:Ignore>
+	 //**************************************
+	 // issue contents
+	 //**************************************
+	 </mt:Ignore>
+	 
+	 <div class="asset-subheader">
+	 <h3>CONTENTS</h3>
+	 </div>
+	 
+		<div class="asset-contents magazineIndex">
+		
+		<mt:Ignore>
+		//**************************************
+	 	// ページのタグに振り付けた文字列でエントリーの出力をコントロール
+	  //**************************************
+		</mt:Ignore>
+		
+		<MTSetVarBlock name="entrycategory"><MTPageTags glue=", "><$MTTagLabel$></MTPageTags></MTSetVarBlock>
+		<MTSetVarBlock name="count">0</MTSetVarBlock>
+		
+		<mt:Entries lastn="100" category="$entrycategory">
+		
+			<$MTSetVar name="count" op="++"$>
+			
+			
+			
+			
+			
+			<dl class="article<mt:If name="count" op="%" value="3" eq="0"> cler</mt:If>" onclick="clickLink('<$mt:EntryPermalink$>')">
+				<dt>
+				
+				<MTIfNonEmpty tag="entrydatacontent">
+				<MTentrydatacontentAsset>
+					<img src="<$mt:AssetThumbnailURL width="156"$>" />
+				
+				</MTentrydatacontentAsset>
+				</MTIfNonEmpty>
+	
+				</dt>
+					<dd>
+					<h4 class="name"><$mt:EntryTitle$></h4>
+					</dd>
+			</dl>
+		
+		</mt:Entries>
+			
+		</div>
+	</div>		
+		
+</div>
+
+
+<$mt:Include module="フッター"$>
+
+</MTApplyModifier>

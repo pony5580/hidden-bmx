@@ -1,0 +1,117 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+<mt:Ignore>
+/*======================================================
+// 2COLの場合
+========================================================*/
+</mt:Ignore>
+<mt:If name="page_columns" eq="2">
+<div id="beta">
+  <div id="beta-inner">
+    <div class="widget-ad widget">
+    <h3 class="widget-header">ADVERTISEMENT</h3>
+      <div class="widget-content" id="ad-large">
+      <a href="hogehoge"><img src="" width="300"  alt="" /></a>
+      </div>
+    </div>
+    
+	<div id="archivesWrp"></div>
+	
+	<mt:Ignore>
+    <$mt:WidgetSet name="メインサイドバー"$>
+    </mt:Ignore>
+	
+  </div>
+</div>
+<!-- beta end -->
+</mt:If>
+<mt:Ignore>
+/*======================================================
+========================================================*/
+</mt:Ignore>
+
+<mt:Ignore>
+/*======================================================
+// 3COLの場合
+========================================================*/
+</mt:Ignore>
+<mt:If name="page_columns" eq="3">
+	<div id="beta-wrp">
+  
+  <mt:Ignore>
+  /*======================================================
+  // ビック広告　使用してない
+  ========================================================*/
+  </mt:Ignore>
+  <mt:Unless name="bloger_flag">
+  <mt:Ignore>
+   <div class="widget-ad widget">
+   <h3 class="widget-header">ADVERTISEMENT</h3>
+   <div class="widget-content" id="ad-large">
+   <a href="/"><img src="/shared/images/ad/ad-dummy.gif" width="352" height="300" alt="hidden champion" /></a>
+   </div>
+	</div>
+  </mt:Ignore>
+	</mt:Unless>
+  <mt:Ignore>
+  /*======================================================
+  ========================================================*/
+  </mt:Ignore>
+  <div id="beta">
+    <div id="beta-inner">
+    
+    
+    <mt:Ignore>
+    /*======================================================
+    // Blogger プロフィール
+    ========================================================*/
+    </mt:Ignore>
+    <mt:Pages>
+    <div class="widget-author widget">
+      <h3 class="widget-header">Blogger</h3>
+      <div class="widget-img">
+      <MTPageAssets>
+      <img src="<$MTAssetThumbnailURL width="140"$>" />
+      </MTPageAssets>
+      </div>
+      <h4 class="widget-name"><$mt:PageTitle$></h4>
+      <div class="widget-content">
+      	<$MTPageBody$>
+      </div>
+    </div>
+    </mt:Pages>
+    <mt:Ignore>
+    /*======================================================
+    ========================================================*/
+    </mt:Ignore>
+    
+    <div id="archivesWrp"></div>
+    
+    <mt:Ignore>
+    <$mt:WidgetSet name="サブサイドバー"$>
+    </mt:Ignore>
+    
+    </div>
+  </div>
+  <!-- beta end -->
+  
+  <div id="gamma">
+    <div id="gamma-inner">
+      <div class="widget-ad2 widget">
+      <h3 class="widget-header">ADVERTISEMENT</h3>
+        <div class="widget-content">
+        <a href=""><img src="/shared/images/ad/long_01.jpg" width="140" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- gamma end -->
+  </div>
+  <!-- beta wrp end -->
+	
+</mt:If>
+<mt:Ignore>
+/*======================================================
+========================================================*/
+</mt:Ignore>
+
+</MTApplyModifier>

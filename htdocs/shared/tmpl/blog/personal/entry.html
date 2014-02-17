@@ -1,0 +1,39 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<mt:Ignore>
+/*======================================================
+// 変数設定
+========================================================*/
+</mt:Ignore>
+<$mt:Var name="page_layout" value="layout-wtt"$>
+<mt:SetVarBlock name="bloger_flag">true</mt:SetVarBlock>
+<mt:SetVarBlock name="title">HIDDEN-CHAMPION.NET |  「ヒドゥン・チャンピオン」 | BLOG | <mt:Pages><$mt:PageTitle encode_html="1"$></mt:Pages> | <$MTEntryTitle$></mt:SetVarBlock>
+<mt:SetVarBlock name="html_head">
+<mt:EntryPrevious><link rel="prev bookmark" href="<$mt:EntryPermalink$>" title="<$mt:EntryTitle encode_html="1"$>" /></mt:EntryPrevious>
+<mt:EntryNext><link rel="next bookmark" href="<$mt:EntryPermalink$>" title="<$mt:EntryTitle encode_html="1"$>" /></mt:EntryNext>
+<$mt:EntryTrackbackData$>
+</mt:SetVarBlock>
+
+<$mt:Include module="ヘッダー" body_id="page-blogger" blog_id="1"$>
+
+<$mt:Include module="パンクズ"$>
+
+<h3 id="blog-page-title" class="widget-header">Original Blog</h3>
+<$mt:Include module="ニュース記事の詳細"$>
+
+　　　<$mt:Include module="トラックバック"$>
+
+　　　<$mt:Include module="コメント"$>
+
+        <!-- widget-news end -->
+        </div>
+        </div>
+        <!-- alpha end -->
+        
+        <$mt:Include module="サイドバー"$>
+        
+      </div>
+    </div>
+    
+    <$mt:Include module="フッター"$>
+</MTApplyModifier>

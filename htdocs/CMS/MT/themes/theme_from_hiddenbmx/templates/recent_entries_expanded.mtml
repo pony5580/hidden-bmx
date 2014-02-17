@@ -1,0 +1,85 @@
+<mt:If name="page_columns" eq="2">
+
+<mt:Ignore>
+/*=====================================
+2カラムの場合は画像ありの最新記事リスト
+=======================================*/
+</mt:Ignore>
+<mt:If tag="BlogEntryCount">
+<mt:Entries lastn="5" unique="0">
+<mt:EntriesHeader>
+<div class="widget-recent-entries widget-archives widget">
+<h3 class="widget-header">RECENT NEWS</h3>
+  <div class="widget-content">
+</mt:EntriesHeader>
+		
+    <ul>
+    <li>
+    <a href="<$mt:EntryPermalink$>">
+      <span class="img">
+      <mt:EntryAssets type="image" lastn="1" sort_order="ascend">
+      <mt:SetVarBlock name="imgw"><$MTAssetProperty property="image_width"></mt:SetVarBlock>
+      <mt:SetVarBlock name="imgh"><$MTAssetProperty property="image_height"></mt:SetVarBlock>
+      <MTIf name="imgw" gt="$imgh">
+      <img src="<$MTAssetThumbnailURL height="40"$>" class="asset-img-thumb" alt="<$MTEntryTitle$>" title="<$MTEntryTitle$>" />
+      <MTElse>
+      <img src="<$MTAssetThumbnailURL width="90"$>" class="asset-img-thumb" alt="<$MTEntryTitle$>" title="<$MTEntryTitle$>" />
+      </MTElse>
+      </MTIf>
+      </mt:EntryAssets>
+      </span>
+      <span class="wrp">
+      <span class="date"><$MTEntryDate language="en" format="%Y %B,%d"$></span>
+      <span class="title"><$mt:EntryTitle trim_to="30"$></span>
+      </span>
+    </a>
+    </li>
+    </ul>
+<mt:EntriesFooter>    
+  </div>
+</div>
+</mt:EntriesFooter>
+</mt:Entries>
+</mt:If>
+<mt:Ignore>
+/*=====================================
+=======================================*/
+</mt:Ignore>
+
+<mt:Else>
+
+<mt:Ignore>
+/*=====================================
+3カラムの場合は画像なしの最新記事リスト
+=======================================*/
+</mt:Ignore>
+<mt:If tag="BlogEntryCount">
+<mt:Entries lastn="10" unique="0">
+<mt:EntriesHeader>
+<div class="widget-recent-posts listTypeB widget">
+   <h3 class="widget-header">RECENT Posts</h3>
+   <div class="widget-content">
+    <ul>
+</mt:EntriesHeader>
+				
+				 <li>
+         <a href="<$mt:EntryPermalink$>">
+         <span class="date"><$MTEntryDate language="en" format="%B,%d %Y"$></span>
+         <span class="title"><$mt:EntryTitle trim_to="30"$></span>
+         </a>
+         </li>
+				
+<mt:EntriesFooter> 
+		</ul>       
+    </div>
+</div>
+</mt:EntriesFooter>	
+</mt:Entries>
+</mt:If>
+
+<mt:Ignore>
+/*=====================================
+=======================================*/
+</mt:Ignore>
+
+</mt:If>

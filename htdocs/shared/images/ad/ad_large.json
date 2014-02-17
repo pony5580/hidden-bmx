@@ -1,0 +1,26 @@
+{
+  "ad":[
+	
+	{
+	"img": "http://hidden-champion.net/TTT_300x250.gif",
+	"link": "http://www.volcom.jp/videos/surf/2013/12/making-of-true-to-this-episode-2-its-not-you-its-we-日本語字幕/",
+	"target": "_blank",
+	"alt": "VOLCOM" 
+    }
+	,
+	{
+	"img": "http://hidden-champion.net/HIDDEN_BANNER_FW13_300.jpg",
+	"link": "http://www.ftcsf.com/",
+	"target": "_blank",
+	"alt": "ad02" 
+    }
+	,
+	{
+	"img": "http://hidden-champion.net/W300xH240px.jpg",
+	"link": "http://55dsl.jp",
+	"target": "_blank",
+	"alt": "55DSL Ad" 
+    }
+		
+	]
+}

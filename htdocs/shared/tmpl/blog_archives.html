@@ -1,0 +1,70 @@
+<mt:Ignore>
+/*=====================================
+3カラムの場合は画像なしの最新記事リスト
+=======================================*/
+</mt:Ignore>
+<mt:If tag="BlogEntryCount">
+<mt:Entries lastn="10" unique="0">
+<mt:EntriesHeader>
+<div class="widget-recent-posts listTypeB widget">
+   <h3 class="widget-header">RECENT Posts</h3>
+   <div class="widget-content">
+    <ul>
+</mt:EntriesHeader>
+
+ <li>
+         <a href="<$mt:EntryPermalink$>">
+         <span class="date"><$MTEntryDate language="en" format="%B,%d %Y"$></span>
+         <span class="title"><$mt:EntryTitle trim_to="30"$></span>
+         </a>
+         </li>
+
+<mt:EntriesFooter> 
+</ul>       
+    </div>
+</div>
+</mt:EntriesFooter>
+</mt:Entries>
+</mt:If>
+
+<mt:Ignore>
+/*=====================================
+月別
+=======================================*/
+</mt:Ignore>
+<mt:IfArchiveTypeEnabled archive_type="Monthly">
+    <mt:ArchiveList archive_type="Monthly">
+        <mt:ArchiveListHeader>
+<div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">MONTHLY <a href="<$mt:Link template="archive_index"$>">ARCHIVE</a></h3>
+    <div class="widget-content">
+        <ul>
+        </mt:ArchiveListHeader>
+            <li onclick="location.href='<$mt:ArchiveLink$>';return false;"><a href="javascript:void(0)"><$mt:ArchiveDate language="en" format="%B %Y"$> (<$mt:ArchiveCount$>)</a></li>
+        <mt:ArchiveListFooter>
+        </ul>
+    </div>
+</div>
+        </mt:ArchiveListFooter>
+    </mt:ArchiveList>
+</mt:IfArchiveTypeEnabled>
+
+
+<mt:Ignore>
+/*=====================================
+タグ
+=======================================*/
+</mt:Ignore>
+<$mt:setvar name="tag_count" value="1"$>
+
+<div class="widget-archive widget-tag-cloud widget">
+  <h3 class="widget-header">TAGS</h3>
+  <div class="widget-content">
+    <ul>
+    <mt:Tags top="60">
+      <li class="<MTIf name="tag_count" op="%" value="2" eq="0">br</MTIf>"><a href="<$mt:TagSearchLink$>"><$mt:TagName$></a></li>
+      <$mt:setvar name="tag_count" op="+" value="1"$>
+      </mt:Tags>
+    </ul>
+  </div>
+</div>

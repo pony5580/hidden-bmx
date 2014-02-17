@@ -1,0 +1,30 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<$mt:Var name="page_layout" value="layout-wtt"$>
+
+<mt:SetVarBlock name="title"><$mt:EntryTitle encode_html="1"$> - <$mt:BlogName encode_html="1"$></mt:SetVarBlock>
+<mt:SetVarBlock name="html_head">
+    <mt:EntryPrevious><link rel="prev bookmark" href="<$mt:EntryPermalink$>" title="<$mt:EntryTitle encode_html="1"$>" /></mt:EntryPrevious>
+    <mt:EntryNext><link rel="next bookmark" href="<$mt:EntryPermalink$>" title="<$mt:EntryTitle encode_html="1"$>" /></mt:EntryNext>
+    <$mt:EntryTrackbackData$>
+</mt:SetVarBlock>
+
+<$mt:Include module="ヘッダー" body_class="mt-entry-archive"$>
+
+<$mt:Include module="パンクズ"$>
+
+<$mt:Include module="記事の詳細"$>
+
+
+
+<mt:Ignore>
+/*================================
+こりゃいらんね
+==================================*/
+<$mt:Include module="トラックバック"$>
+<$mt:Include module="コメント"$>
+</mt:Ignore>
+
+<$mt:Include module="フッター"$>
+
+</MTApplyModifier>

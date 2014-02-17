@@ -1,0 +1,62 @@
+<div class="widget-magazine-entry widget">
+	<div class="asset-header">
+		<h3>MAGAZINE</h3>
+	</div>
+	
+	<div class="asset-subheader">
+
+		<h3><$mt:EntryTitle$></h3>
+	</div>
+	
+	<div class="asset-contents entry-content">
+		<mt:If tag="EntryBody">
+				<div class="asset-body">
+						<$mt:EntryBody$>
+				</div>
+		</mt:If>
+		
+		<mt:If tag="EntryMore" convert_breaks="0">
+        <div id="more" class="asset-more">
+            <$mt:EntryMore$>
+        </div>
+		</mt:If>
+		
+	</div>
+
+</div>
+
+
+
+
+
+<mt:Ignore>
+<!--
+<div id="entry-<$mt:EntryID$>" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h1 id="page-title" class="asset-name entry-title"><$mt:EntryTitle$></h1>
+        <$mt:Include module="ニュース記事のメタデータ"$>
+    </div>
+    <div class="asset-content entry-content">
+<mt:If tag="EntryBody">
+        <div class="asset-body">
+            <$mt:EntryBody$>
+        </div>
+</mt:If>
+<mt:If tag="EntryMore" convert_breaks="0">
+        <div id="more" class="asset-more">
+            <$mt:EntryMore$>
+        </div>
+</mt:If>
+    </div>
+		
+		<mt:Ignore>
+		まるごと消しとく
+    <div class="asset-footer">
+        <$mt:Include module="カテゴリ"$>
+        <$mt:Include module="タグ"$>
+    </div>
+		</mt:Ignore>
+		
+</div>
+-->
+</mt:Ignore>

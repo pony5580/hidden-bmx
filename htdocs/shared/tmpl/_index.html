@@ -1,0 +1,93 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<mt:Ignore>
+/*+++++++++++++++++++++++++++++++++
+変数設定
++++++++++++++++++++++++++++++++++++*/
+</mt:Ignore>
+<$mt:Var name="page_layout" value="layout-wm"$>
+<mt:SetVarBlock name="title"><$mt:BlogName encode_html="1"$></mt:SetVarBlock>
+<mt:SetVarBlock name="html_head">
+		<link rel="stylesheet" href="/shared/js/plugin/nivoslider/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$mt:Link template="rsd"$>" />
+</mt:SetVarBlock>
+<mt:SetVarBlock name="html_footer">
+	<script type="text/javascript"src="shared/js/plugin/nivoslider/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$('#top-banner').nivoSlider({ pauseTime:5000, pauseOnHover:false,controlNav:false,directionNav:false});
+	</script>
+</mt:SetVarBlock>
+
+    <$mt:Include module="ヘッダー" body_id="page-top"$>
+    
+    <div id="content">
+      <div id="content-inner">
+        <div id="alpha">
+        <div id="alpha-inner">
+        
+        <mt:Ignore>
+        /*+++++++++++++++++++++++++++++++++
+         トップ用のFlash
+        +++++++++++++++++++++++++++++++++++*/
+        </mt:Ignore>
+        
+        <mt:If name="main_index">
+          <div class="widget-features widget">
+          <h3 class="widget-header">FEATURES</h3>
+        <div id="top-banner" class="nivoSlider">
+        <a href="http://hidden-champion.net/news/2010/12/hidden-champion-issue19-release25th-december-2010.html"><img src="shared/images/top/FEATURE_HIDDEN19.jpg" alt="" /></a>
+        <a href="http://hidden-champion.net/news/2010/10/alife-x-hidden-champion-book-vol2-alife-is-money.html"><img src="shared/images/top/ALIFE_HIDDEN_2.jpg" alt="" /></a>
+        <a href="http://hidden-champion.net/"><img src="shared/images/top/HIDDEN18_Soon.jpg" alt="" /></a>
+        <a href="http://hidden-champion.net/news/2010/07/hidden-champion-special-book-lakai-or-die.html"><img src="shared/images/top/LAKAIor-DIE-PR.jpg" alt="" /></a>
+        <a href="http://hidden-champion.net/news/2010/06/oakley-cycle-culture-magazine-rebels.html"><img src="shared/images/top/REBELS_FEATURE.jpg" alt="" /></a>
+        <a href="#"><img src="shared/images/top/hidden_card.jpg" alt="" /></a>
+       
+        
+        </div>
+        </div>
+        </mt:If>
+        
+        <mt:Ignore>
+        /*+++++++++++++++++++++++++++++++++
+         NEWS エントリー
+        +++++++++++++++++++++++++++++++++++*/
+        </mt:Ignore>
+        <div class="widget-news widget">
+        <h3 class="widget-header">NEWS</h3>
+        
+        <MTPageContents count="10">
+        <mt:Entries>
+        <$mt:Include module="ニュース記事の概要"$>
+        <$MTPageSeparator$>
+        </mt:Entries>
+        
+        </MTPageContents>
+        
+        <mt:Ignore>
+        /*+++++++++++++++++++++++++++++++++
+         ページナビ
+        +++++++++++++++++++++++++++++++++++*/
+        </mt:Ignore>
+        <ul class="pageNav">
+        <MTIfPageBefore>
+       	<$MTPageBefore delim="&lt;&lt; Previous"$>
+        </MTIfPageBefore>
+        <$MTPageLists link_start="<li>" link_close="</li>"$>
+        <MTIfPageAfter>
+        <$MTPageAfter delim="NEXT &gt;&gt;"$>
+        </MTIfPageAfter>
+        </ul>
+        
+        </div>
+        <!-- widget-news end -->
+        </div>
+        </div>
+        <!-- alpha end -->
+        
+        <$mt:Include module="サイドバー"$>
+        
+      
+    </div>
+    
+    <$mt:Include module="フッター"$>
+</MTApplyModifier>

@@ -1,0 +1,50 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+<article class="list_blog">
+						<header>
+							<div class="header_inner">
+								<div class="meta cf">
+									<time datetime="<$mt:EntryDate format="%Y-%m-%d"$>"><$mt:EntryDate language="en" format="%B, %d %Y"$></time>
+									<div class="author">Posted by <a href="<$MTBlogURL$>"><$mt:BlogName$></a></div>
+								</div>
+								<h1><a href="<$mt:EntryPermalink$>"><$mt:EntryTitle$></a></h1>
+							</div>
+						</header>
+						<!--entry_body-->
+						<section class="entry_body">
+							<div class="entry_body_inner">
+								<mt:EntryAssets type="image" lastn="1" sort_order="ascend">
+								<mt:SetVarBlock name="imgw"><$mt:AssetProperty property="image_width"$></mt:SetVarBlock>
+									<mt:SetVarBlock name="imgh"><$mt:AssetProperty property="image_width"$></mt:SetVarBlock>
+<figure>
+<a href="<$mt:EntryPermalink$>">
+<MTIf name="imgw" gt="$imgh">
+<img src="<$mt:AssetThumbnailURL$>" height="475" alt="<$MTEntryTitle$>" title="<$MTEntryTitle$>" />
+<MTElse>
+<img src="<$mt:AssetThumbnailURL$>" width="640" alt="<$MTEntryTitle$>" title="<$MTEntryTitle$>" />
+</MTIf>
+</a>
+</figure>
+</mt:EntryAssets>
+								
+								<p><$mt:EntryBody strip_tags="1" words="200" convert_breaks="0"$>…</p>
+								<p class="readMore"><a href="<$mt:EntryPermalink$>">Read More</a></p>
+								<!-- entry_body-meta -->
+								<section class="entry_body_meta">
+								<mt:If tag="EntryCategory"><p>Category : <mt:EntryCategories glue=', '><a href="<$mt:CategoryArchiveLink$>" rel="tag"><$mt:CategoryLabel$></a></mt:EntryCategories></p></mt:If>
+<mt:EntryIfTagged><p>Tags : <mt:EntryTags glue=', '><a href="/CMS/mt/mt-search.cgi?IncludeBlogs=<$MTBlogID$>&tag=<$mt:TagName$>&limit=12"><$mt:TagName$></a><!--<a href="javascript:void(0)" onClick="location.href='<$mt:TagSearchLink encode_js="1"$>';return false;" rel="tag"><$mt:TagName$></a>--></mt:EntryTags></p></mt:EntryIfTagged>
+								</section>
+								<!-- /entry_body-meta -->
+							</div>
+						</section>
+						<!--/entry_body-->
+						<!--list_blog_social-->
+						<section class="list_blog_social">
+							<div class="list_blog_social_inner cf">
+								<span class="fbBtn"><iframe src="http://www.facebook.com/plugins/like.php?locale=en_US&href=<$mt:EntryPermalink$>&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:84px; height:21px;" allowTransparency="true"></iframe></span><span class="twitterBtn"><a href="http://twitter.com/share" class="twitter-share-button" data-url="<$MTEntryPermalink$>" data-text="<$MTEntryTitle encode_html="1"$>" data-count="horizontal" data-via="HIDDEN_CHAMPION" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var
+js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span>
+							</div>
+						</section>
+						<!--/list_blog_social-->
+					</article>
+</MTApplyModifier>

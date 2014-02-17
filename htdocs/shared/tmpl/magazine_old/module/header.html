@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<$mt:PublishCharset$>" />
+    <link rel="stylesheet" href="/shared/css/mt.css" type="text/css" />		
+		<link rel="stylesheet" href="/shared/css/exclusive/magazine.css" type="text/css" />
+    <link rel="start" href="<$mt:BlogURL$>" title="ホーム" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+		
+		<link rel="stylesheet" type="text/css" href="/shared/js/sb/shadowbox.css" />
+	
+    <script type="text/javascript" src="/shared/js/mt.js"></script>
+		<script type="text/javascript" src="/shared/js/lib/jquery.js"></script>
+		<script type="text/javascript" src="/shared/js/hidden.js"></script>
+		<script type="text/javascript" src="/shared/js/sb/shadowbox.js"></script>
+		<script type="text/javascript">
+			Shadowbox.init();
+		</script>
+		
+		<meta name="keywords" content="HIDDEN-CHAMPION, ART, BMX, FASHION, FIXED, MUSIC, SKATE, SNOW, SURF" />
+		
+		<meta name="description" lang="ja" content="Hidden Champion is a free japanese Magazine featuring “hidden champions” of many cultures. The first issue appeared in August 2003. Since then it comes out 2 times a year and it´s available in good clubs, record shops, cafes and bars." />
+
+    <title><$mt:Var name="title"$></title>
+</head>
+<body id="<$mt:BlogTemplateSetID$>" class="<$mt:Var name="body_class"$> <$mt:Var name="page_layout"$>">
+    <div id="container">
+        <div id="container-inner">
+            <div id="header">
+                <div id="header-inner">
+                    <div id="header-content">
+                    <mt:If name="main_index">
+                        <h1 id="header-name"><a href="<$mt:BlogURL$>" accesskey="1"><$mt:BlogName encode_html="1"$></a></h1>
+                    <mt:Else>
+                        <div id="header-name"><a href="<$mt:BlogURL$>" accesskey="1"><$mt:BlogName encode_html="1"$></a></div>
+                    </mt:If>
+										
+										<$mt:Include widget="検索" $>
+						
+										
+						<div class="navi-wrp">
+							<h2 id="header-description"><$mt:BlogDescription$></h2>
+									<ul id="sub-navi-list">
+												<li><a href="/about/">About</a></li>
+										</ul>
+								<div id="main-navigation">
+										<div id="main-navigation-inner">
+												<$mt:Include module="ナビゲーション" $>
+										</div>
+								</div>
+						</div>
+												
+												<ul id="func-navi">
+													<li id="logo-myspcace"><a href="http://www.myspace.com/hiddenchampion" target="_blank">myspace.com</a></li>
+													<li id="logo-rss"><a href="http://hidden-champion.net/atom.xml">rss feed</a></li>
+												</ul>
+												
+                        <mt:ignore>
+                        <$mt:Include widget="サインイン" $>
+                        </mt:ignore>
+                    </div>
+                </div>
+            </div>

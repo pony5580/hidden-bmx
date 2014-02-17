@@ -1,0 +1,20 @@
+<mt:IfCommentsActive>
+<div id="comments" class="comments">
+    <mt:If name="comment_preview">
+    <$mt:Include module="コメント入力フォーム"$>
+    </mt:If>
+    <mt:Comments>
+        <mt:CommentsHeader>
+    <h2 class="comments-header"><$mt:EntryCommentCount singular="コメント(1)" plural="コメント(#)" none="コメント(0)"$></h2>
+    <div class="comments-content">
+        </mt:CommentsHeader>
+        <$mt:Include module="コメント詳細"$>
+        <mt:CommentsFooter>
+    </div>
+        </mt:CommentsFooter>
+    </mt:Comments>
+    <mt:Unless name="comment_preview">
+    <$mt:Include module="コメント入力フォーム"$>
+    </mt:Unless>
+</div>
+</mt:IfCommentsActive>

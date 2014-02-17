@@ -1,0 +1,21 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<$mt:Var name="page_layout" value="layout-wm"$>
+<mt:SetVarBlock name="nav_on"><$mt:PageID$></mt:SetVarBlock>
+
+<mt:SetVarBlock name="title"><$mt:PageTitle encode_html="1"$> - <$mt:BlogName encode_html="1"$></mt:SetVarBlock>
+<mt:SetVarBlock name="html_head"><$mt:EntryTrackbackData$></mt:SetVarBlock>
+
+<$mt:Include module="ヘッダー" body_class="mt-page-archive"$>
+
+<$mt:Include module="パンクズ"$>
+
+<$mt:Include module="ウェブページの詳細"$>
+
+<$mt:Include module="トラックバック"$>
+
+<$mt:Include module="コメント"$>
+
+<$mt:Include module="フッター"$>
+
+</MTApplyModifier>

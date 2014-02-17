@@ -1,0 +1,50 @@
+<mt:SetVarBlock name="page_title">アーカイブ</mt:SetVarBlock>
+<mt:SetVarBlock name="title"><$mt:BlogName encode_html="1"$>: <$mt:Var name="page_title"$></mt:SetVarBlock>
+
+<$mt:Include module="ヘッダー" body_class="mt-archive-index"$>
+
+<$mt:Include module="パンクズ"$>
+
+<h1 id="page-title" class="archive-title"><$mt:Var name="page_title"$></h1>
+
+<mt:IfArchiveTypeEnabled archive_type="Monthly">
+<div class="archive-monthly archive-date-based archive">
+    <mt:ArchiveList archive_type="Monthly">
+        <mt:ArchiveListHeader>
+    <h2 class="archive-header">月別アーカイブ</h2>
+    <div class="archive-content">
+        <ul>
+        </mt:ArchiveListHeader>
+            <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
+        <mt:ArchiveListFooter>
+        </ul>
+    </div>
+        </mt:ArchiveListFooter>
+    </mt:ArchiveList>
+</div>
+</mt:IfArchiveTypeEnabled>
+
+<mt:IfArchiveTypeEnabled archive_type="Category">
+<div class="archive-category archive">
+    <h2 class="archive-header">カテゴリ</h2>
+    <div class="archive-content">
+    <mt:TopLevelCategories>
+        <mt:SubCatIsFirst>
+        <ul>
+        </mt:SubCatIsFirst>
+        <mt:If tag="CategoryCount">
+            <li><a href="<$mt:CategoryArchiveLink$>" title="<$mt:CategoryDescription$>"><$mt:CategoryLabel$></a>
+        <mt:Else>
+            <li><$mt:CategoryLabel$>
+        </mt:If>
+        <$mt:SubCatsRecurse$>
+            </li>
+        <mt:SubCatIsLast>
+        </ul>
+        </mt:SubCatIsLast>
+    </mt:TopLevelCategories>
+    </div>
+</div>
+</mt:IfArchiveTypeEnabled>
+
+<$mt:Include module="フッター"$>

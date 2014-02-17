@@ -1,0 +1,127 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<mt:Ignore>
+/*======================================================
+// 変数設定
+========================================================*/
+</mt:Ignore>
+<$mt:Var name="page_layout" value="layout-wtt"$>
+<mt:SetVarBlock name="bloger_flag">true</mt:SetVarBlock>
+<mt:SetVarBlock name="title">HIDDEN-CHAMPION.NET |  「ヒドゥン・チャンピオン」 | BLOG | <mt:Pages><$mt:PageTitle encode_html="1"$></mt:Pages></mt:SetVarBlock>
+
+<mt:Ignore>
+/*======================================================
+// ヘッダー
+========================================================*/
+</mt:Ignore>
+<$mt:Include module="ヘッダー" body_id="page-blogger" blog_id="1"$>
+
+
+<mt:Ignore>
+/*======================================================
+// パンクズ
+========================================================*/
+</mt:Ignore>
+<$mt:Include module="パンクズ"$>
+
+<div class="widget-blog-orgin widget">
+<h3 id="blog-page-title" class="widget-header">Original Blog</h3>
+
+<MTPageContents count="5">
+<mt:Entries lastn="200">
+
+<mt:Ignore>
+/*======================================================
+// 記事の内容
+========================================================*/
+</mt:Ignore>
+<$mt:EntryTrackbackData$>
+<div id="entry-<$mt:EntryID$>" class="entry-asset asset hentry">
+    <div class="asset-header">
+
+
+<mt:If name="main_index">
+ <h4 class="asset-name entry-title"><a href="<$mt:EntryPermalink$>" rel="bookmark"><$mt:EntryTitle$></a></h4>
+<mt:Else>
+<h2 class="asset-name entry-title"><a href="<$mt:EntryPermalink$>" rel="bookmark"><$mt:EntryTitle$></a></h2>
+</mt:If>
+
+
+       
+        <$mt:Include module="ニュース記事のメタデータ"$>
+    
+
+</div>
+    
+<div class="asset-content entry-content">
+
+
+<mt:If tag="EntryBody">
+        <div class="asset-body">
+ <$mt:EntryBody$>
+        </div>
+</mt:If>
+
+<mt:If tag="EntryMore" convert_breaks="0">
+<div id="more" class="asset-more">
+<$mt:EntryMore$>
+</div>
+</mt:If>
+
+
+    </div>
+    <div class="asset-footer">
+
+<mt:Unless name="hide_counts" eq="1">
+<mt:IfCommentsActive>Comments : <a href="<$mt:EntryPermalink$>#comments"><$mt:EntryCommentCount singular="1" plural="#"$></a></mt:IfCommentsActive>
+
+<mt:Ignore>
+<mt:IfPingsActive><span class="separator">|</span> <a href="<$mt:EntryPermalink$>#trackbacks"><$mt:EntryTrackbackCount singular="トラックバック(1)" plural="トラックバック(#)"$></a></mt:IfPingsActive>
+</mt:Ignore>
+
+</mt:Unless>
+
+&nbsp;&nbsp;
+
+<$mt:Include module="タグ"$>
+
+</div>
+</div>
+<mt:Ignore>
+/*======================================================
+// 記事の内容 ここまで
+========================================================*/
+</mt:Ignore>
+<$MTPageSeparator$>
+</mt:Entries>
+
+</MTPageContents>
+
+<mt:Ignore>
+/*+++++++++++++++++++++++++++++++++
+ ページナビ
++++++++++++++++++++++++++++++++++++*/
+</mt:Ignore>
+<ul class="pageNav">
+<MTIfPageBefore>
+<li class="jump"><$MTPageBefore delim="&lt;&lt; Previous"$></li>
+</MTIfPageBefore>
+<$MTPageLists link_start="<li>" link_close="</li>"$>
+<MTIfPageAfter>
+<li class="jump"><$MTPageAfter delim="NEXT &gt;&gt;"$></li>
+</MTIfPageAfter>
+</ul>
+
+</div>
+        <!-- widget-news end -->
+        </div>
+        </div>
+        <!-- alpha end -->
+        
+        <$mt:Include module="サイドバー"$>
+        
+      </div>
+    </div>
+    
+    <$mt:Include module="フッター"$>
+</MTApplyModifier>

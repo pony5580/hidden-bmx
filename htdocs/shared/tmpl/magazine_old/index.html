@@ -1,0 +1,112 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<mt:Ignore>
+/*======================================================
+// レイアウト変数設定
+========================================================*/
+</mt:Ignore>
+<$mt:Var name="page_layout" value="layout-wm"$>
+
+<mt:Ignore>
+/*======================================================
+// 変数設定
+========================================================*/
+</mt:Ignore>
+
+<mt:SetVarBlock name="blog_flag">true</mt:SetVarBlock>
+
+<mt:SetVarBlock name="title"><$mt:BlogName encode_html="1"$></mt:SetVarBlock>
+
+
+<mt:Ignore>
+/*======================================================
+// scriptやlink等のヘッダー情報
+========================================================*/
+</mt:Ignore>
+<$mt:Include module="ヘッダー" body_class="mt-main-index"$>
+	
+	
+	<div id="content">
+		<div id="content-inner">
+			
+			<mt:Ignore>
+			/*======================================================
+			// パンクズリスト
+			========================================================*/
+			</mt:Ignore>
+			
+			<div id="breadcrumb">
+			<span><a href="/">HOME</a></span> >
+			<span>MAGAZINE</span>
+			</div>
+			
+			
+			<mt:Ignore>
+			/*======================================================
+			// alpha カラム
+			========================================================*/
+			</mt:Ignore>
+			
+				<div id="alpha">
+					<div id="alpha-inner">
+					
+						
+						<mt:Ignore>
+						/*======================================================
+						// magazine content
+						========================================================*/
+						</mt:Ignore>
+						<div class="bloger-wrp">
+							
+							<mt:Ignore>
+							/*======================================================
+							// Original Blog
+							========================================================*/
+							</mt:Ignore>
+							
+							<div class="widget-magazine widget">
+								<div class="asset-header">
+								<h3>MAGAZINE</h3>
+								</div>
+								<div class="asset-contents">
+									<h4 class="title">2009</h4>
+								
+								
+									<mt:Pages tags="issue12" limit="1">
+									<dl class="article" onclick="clickLink('<$MTPagePermalink$>')">
+										<dt>
+										
+										<MTIfNonEmpty tag="pagedatamagazine">
+										<MTpagedatamagazineAsset>
+											<img src="<$MTAssetThumbnailURL width="122"$>" />
+										</MTpagedatamagazineAsset>
+										</MTIfNonEmpty>
+							
+																			
+										</dt>
+											<dd>
+											<h4 class="name"><$MTPageTitle$></h4>
+											<div id="blog">
+												<p class="date"><$MTpagedata$></p>
+												<p class="txt"><$MTPageExcerpt$></p>
+											</div>
+											</dd>
+									</dl>
+									</mt:Pages>
+								
+								</div>
+							</div>
+							
+							
+							
+					</div>
+			
+					
+			<mt:Ignore>
+			/*======================================================
+			// beta カラムとfooter
+			========================================================*/
+			</mt:Ignore>
+			<$mt:Include module="フッター"$>
+
+</MTApplyModifier>

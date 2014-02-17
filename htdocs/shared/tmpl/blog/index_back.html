@@ -1,0 +1,132 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<mt:Ignore>
+/*======================================================
+// レイアウト変数設定
+========================================================*/
+</mt:Ignore>
+<$mt:Var name="page_layout" value="layout-wm"$>
+
+<mt:Ignore>
+/*======================================================
+// 変数設定
+========================================================*/
+</mt:Ignore>
+<mt:SetVarBlock name="html_footer">
+<script type="text/javascript">
+function print_new() {
+var delDay = 3;
+var newDay = new Date();
+$("div.article").each(function(){
+var entryTIme = $(this).find(".dateTime").get(0).innerHTML;
+var oldDay = new Date(entryTIme);
+var d = (newDay - oldDay) / (1000 * 24 * 3600);
+if(d <= delDay){
+$(this).addClass("newEntry");
+}
+});
+
+}
+$(function(){ print_new(); });
+</script>
+<script type="text/javascript" src="/CMS/mt/mt-period.cgi?<$MTBlogID$>"></script>
+</mt:SetVarBlock>
+
+<mt:SetVarBlock name="blog_flag">true</mt:SetVarBlock>
+
+<mt:SetVarBlock name="title"><$mt:BlogName encode_html="1"$></mt:SetVarBlock>
+
+
+<mt:Ignore>
+/*======================================================
+// scriptやlink等のヘッダー情報
+========================================================*/
+</mt:Ignore>
+<$mt:Include module="ヘッダー" body_id="page-blogs" blog_id="1"$>
+
+
+<div id="content">
+<div id="content-inner">
+
+<mt:Ignore>
+/*======================================================
+// パンクズリスト
+========================================================*/
+</mt:Ignore>
+
+<div id="breadcrumb">
+<span><a href="/">HOME</a></span> >
+<span>Blogs</span>
+</div>
+
+
+<mt:Ignore>
+/*======================================================
+// alpha カラム
+========================================================*/
+</mt:Ignore>
+
+<div id="alpha">
+<div id="alpha-inner">
+<h3 id="blog-page-title" class="widget-header">Original Blog</h3>       
+        <mt:Ignore>
+        /*======================================================
+        // BLOGER content
+        ========================================================*/
+        </mt:Ignore>  
+          
+<div class="widget-blog-orgin widget">
+        <h3 class="widget-header">Blogs</h3>
+        
+        <mt:Ignore>
+        /*======================================================
+        // Original Blog
+        ========================================================*/
+        </mt:Ignore>
+        
+        <div class="blogs-wrp">
+        
+        <mt:IfNonZero tag="BlogEntryCount" include_blogs="children">
+<MTSetVar name="count" value="0">
+        <mt:MultiBlog mode="loop" exclude_blogs="1,4,6,7,20,23, 31">
+        <mt:Entries lastn="1">
+           
+        <MTSetVar name="count" op="++">
+        <mt:Pages lastn="1">
+        <div class="article<MTIf name="count" op="mod" value="6" eq="0"> br</MTIf>">
+          <a href="<$MTBlogURL$>">
+<MTPageAssets>
+<span class="imgWrp"><img src="<$MTAssetThumbnailURL width="130"$>" /></span>
+</MTPageAssets>
+</mt:Pages>
+                 
+              <span class="dateTime"><$mt:EntryDate format="%Y/%B/%e" language="ja"></span>
+              <mt:Pages lastn="1">
+              <span class="name"><$mt:PageTitle$></span>
+              </mt:Pages>
+  <span class="date"><$mt:EntryDate format="%B %d, %Y" language="en"></span>
+              <span class="new"></span>
+            </a>
+          </div>
+        
+        
+        </mt:Entries>
+        </mt:MultiBlog>
+        </mt:IfNonZero>
+        
+
+          
+        </div>
+        <!-- blogs-wrp end -->
+        </div>
+<!-- widget-blog-orgin -->
+        
+        </div>
+        </div>
+        <!-- alpha end -->
+        
+      </div>
+    </div>
+    
+    <$mt:Include module="フッター"$>
+</MTApplyModifier>

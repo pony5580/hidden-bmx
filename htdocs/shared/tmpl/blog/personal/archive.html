@@ -1,0 +1,56 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<mt:Ignore>
+/*======================================================
+// 変数設定
+========================================================*/
+</mt:Ignore>
+<$mt:Var name="page_layout" value="layout-wtt"$>
+<mt:SetVarBlock name="bloger_flag">true</mt:SetVarBlock>
+
+<mt:IfArchiveType archive_type="Monthly">
+<mt:SetVarBlock name="page_title"><$mt:ArchiveDate language="en" format="%Y %B "$></mt:SetVarBlock>
+</mt:IfArchiveType>
+
+<mt:SetVarBlock name="title">HIDDEN-CHAMPION.NET |  「ヒドゥン・チャンピオン」 | BLOG | <mt:Pages><$mt:PageTitle encode_html="1"$></mt:Pages> | <$mt:Var name="page_title"$></mt:SetVarBlock>
+
+<mt:Unless name="datebased_archive"><$mt:Var name="limit" value="auto"$></mt:Unless>
+<mt:If name="datebased_archive">
+    <mt:SetVarBlock name="html_head">
+        <mt:ArchivePrevious><link rel="prev" href="<$mt:ArchiveLink$>" title="<$mt:ArchiveTitle encode_html="1"$>" /></mt:ArchivePrevious>
+        <mt:ArchiveNext><link rel="next" href="<$mt:ArchiveLink$>" title="<$mt:ArchiveTitle encode_html="1"$>" /></mt:ArchiveNext>
+    </mt:SetVarBlock>
+</mt:If>
+
+<$mt:Include module="ヘッダー" body_id="page-blogger" blog_id="1"$>
+
+<$mt:Include module="パンクズ"$>
+<h3 id="blog-page-title" class="widget-header">Original Blog</h3>
+<h1 id="page-title" class="archive-title"><$mt:Var name="page_title"$></h1>
+
+<mt:Entries limit="$limit">
+<$mt:Include module="ニュース記事の概要"$>
+</mt:Entries>
+
+<div class="content-nav">
+    <mt:ArchivePrevious>
+    <a href="<$mt:ArchiveLink$>">&laquo; <$mt:ArchiveTitle$></a> |
+    </mt:ArchivePrevious>
+    <a href="<$mt:Link template="main_index"$>">blog top</a> |
+    <mt:ArchiveNext>
+    <a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$> &raquo;</a>
+    </mt:ArchiveNext>
+</div>
+
+        <!-- widget-news end -->
+        </div>
+        </div>
+        <!-- alpha end -->
+        
+        <$mt:Include module="サイドバー"$>
+        
+      </div>
+    </div>
+    
+    <$mt:Include module="フッター"$>
+</MTApplyModifier>​

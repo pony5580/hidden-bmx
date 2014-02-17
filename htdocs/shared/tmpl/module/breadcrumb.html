@@ -1,0 +1,82 @@
+<mt:SetVarBlock name="blogID"><$MTBlogID$></mt:SetVarBlock>
+
+<div id="content">
+<div id="content-inner">
+
+<MTUnless name="search_results">
+<MTUnless name="message">
+
+
+<div id="breadcrumb">
+<span><a href="/">Home</a></span> &gt;
+
+<mt:Ignore>
+/*=====================================
+ブログのページだったら
+=======================================*/
+</mt:Ignore>
+<MTIf name="blogID" ne="1">
+<MTIf name="blogID" ne="4">
+<MTIf name="blogID" ne="6">
+<span><a href="/blog/">Blogs</a></span> &gt; 
+<mt:If name="main_index">
+<span><mt:Pages><$mt:PageTitle encode_html="1"$></mt:Pages></span> 
+<mt:Else>
+<span><a href="<$MTBlogURL$>"><mt:Pages><$mt:PageTitle encode_html="1"$></mt:Pages></a></span> &gt; 
+</mt:If>
+</mt:If>
+</mt:If>
+</mt:If>
+<mt:Ignore>
+/*=====================================
+=======================================*/
+</mt:Ignore>
+
+
+<mt:Ignore>
+/*=====================================
+マガジンのページだったら
+=======================================*/
+</mt:Ignore>
+<MTIf name="blogID" eq="6">
+<span><a href="/magazine/">MAGAZINE</a></span> &gt; 
+<mt:If name="page">
+<span><$mt:PageTitle remove_html="1"$></span> 
+<mt:Else>
+<span><a href="../">
+
+<MTEntryCategories>
+
+<MTSetVarBlock name="entry-cat"><$MTCategoryLabel$></MTSetVarBlock>
+
+<mt:If name="entry-cat" like="issue12">
+
+<$MTCategoryLabel$>
+
+</mt:If>
+
+</MTEntryCategories>
+
+</a></span> &gt; 
+</mt:If>
+</mt:If>
+<mt:Ignore>
+/*=====================================
+=======================================*/
+</mt:Ignore>
+
+
+<MTIfArchiveType archive_type="Individual">
+ <span><$mt:ArchiveTitle$></span>
+</MTIfArchiveType>
+
+<MTIfArchiveType archive_type="Monthly">
+ <span><$mt:ArchiveDate language="en" format="%B %Y"$> Archive</span>
+</MTIfArchiveType>
+</div>
+
+</MTUnless>
+</MTUnless>
+
+<div id="alpha">
+<div id="alpha-inner">

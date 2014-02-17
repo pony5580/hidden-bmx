@@ -1,0 +1,53 @@
+#page-magazine .magazine-top #alpha{width:640px; margin-right:0; float:right;}
+#page-magazine .magazine-top #beta{float:left;}
+#page-magazine .magazine-top #magazine-page-title{width:860px;}
+#page-magazine .magazine-top .step{margin-bottom:20px;}
+#page-magazine .magazine-top .post{width:201px; float:left; margin-right:18px; overflow:hidden;}
+#page-magazine .magazine-top .break{float:right; margin-right:0;}
+#page-magazine .magazine-top .post .thumb{margin-bottom:5px;}
+
+#page-magazine .magazine-top .post a{display:block; width:201px;}
+#page-magazine .magazine-top .post .title{font-weight:bold; font-size:12px;}
+
+#page-magazine #magazine-wrap{margin-bottom:10px;}
+#page-magazine #beta		{float:left; width:200px; border:none;}
+#page-magazine #beta h4	{background:url(/shared/images/dotLine.gif) repeat-x bottom left; padding-bottom:9px;}
+#page-magazine #beta li	{background:url(/shared/images/dotLine.gif) repeat-x bottom left; padding-bottom:1px;}
+#page-magazine #beta li a	{font-size:13px; line-height:1.2; padding:8px 0 8px 0; display:block;}
+#page-magazine #beta li .on{color:#ff0000!important;}
+
+#page-magazine .magazine-entry-standard #alpha h2{font-size:24px; font-weight:bold; line-height:1.2; padding-bottom:3px;}
+#page-magazine .magazine-entry-standard #alpha .entry-meta{font-size:11px; font-weight:bold; line-height:1.2; margin-bottom:20px;}
+#page-magazine .magazine-entry-standard #beta{width:300px; float:right;}
+#page-magazine .magazine-entry-standard #magazine-page-title{width:540px;}
+#page-magazine .magazine-entry-standard .entry-body{font-size:12px; line-height:1.6;}
+#page-magazine .magazine-entry-standard .default .entry-body{padding-bottom:15px;}
+
+#page-magazine #beta #ttl_latestArticles {
+    background: url(/shared/images/title/lastest-articles.gif) no-repeat;
+    height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 300px;
+	text-indent:-9999px; overflow:hidden;
+}
+
+#page-magazine .articleBox{background:url(/shared/images/dotLine.gif) repeat-x bottom left; padding-bottom:10px; margin-bottom:10px;}
+#page-magazine .articleBox .thumb{width:108px; float:left;}
+#page-magazine .articleBox .meta{width:180px; float:right;}
+#page-magazine .articleBox .meta h5{font-weight:bold; font-size:14px; line-height:1.2; padding-bottom:2px;}
+#page-magazine .articleBox .meta .from{font-weight:bold; font-size:11px; line-height:1.2;}
+
+
+#page-magazine #alpha.spLayout1,
+#page-magazine #alpha.spLayout2{width:860px; float:none;}
+#page-magazine #alpha.spLayout1 .left,
+#page-magazine #alpha.spLayout2 .left{width:420px; float:left; padding-right:20px;}
+#page-magazine #alpha.spLayout1 .right,
+#page-magazine #alpha.spLayout2 .right{width:420px; float:right;}
+#page-magazine #alpha.spLayout1 #magazine-page-title,
+#page-magazine #alpha.spLayout2 #magazine-page-title{width:860px;}
+#page-magazine #alpha.spLayout1 .mainImage{margin-bottom:20px;}
+
+#page-magazine #alpha #navigation{padding:20px 0 0 0;}
+#page-magazine #beta .current a{color:#f00;}

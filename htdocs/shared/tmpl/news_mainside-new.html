@@ -1,0 +1,158 @@
+<mt:Ignore>
+/*=====================================
+最新ブログ記事一覧
+=======================================*/
+</mt:Ignore>
+<div class="widget-blogs widget">
+<h3 class="widget-header">Blogs</h3>
+  <div id="scroll-wrp" class="widget-content">
+  <ul style="overflow:visible; height:auto;">
+<MTMultiBlog mode="loop" exclude_blogs="4,6,1,20,23, 31">
+<mt:IfNonZero tag="BlogEntryCount" exclude_blogs="4,6,1,20, 31">
+<mt:Entries lastn="1">
+<mt:EntriesHeader>  
+  
+  </mt:EntriesHeader>
+  
+  <li class="blogAuthorList">
+  <a href="<$mt:EntryPermalink$>">
+    <span class="img">
+    <mt:Pages>
+    <MTPageAssets>
+<img src="<$MTAssetThumbnailURL height="60"$>" />
+</MTPageAssets>
+    </mt:Pages>
+    </span>
+    <span class="wrp">
+    <span class="name"><$mt:BlogName$></span>
+    <span class="date"><$mt:EntryDate language="en" format="%Y %B,%d"$></span>
+<span class="published" title="<$mt:EntryDate format_name="iso8601"$>" style="display:none" ><$mt:EntryDate format="%x %H:%M" language="en"$></span>
+    <span class="title"><$mt:EntryTitle$></span>
+    </span>
+  </a>
+  </li>
+  <mt:EntriesFooter>
+ 
+  </mt:EntriesFooter>
+</mt:Entries>
+</mt:IfNonZero>
+</MTMultiBlog>
+ </ul>
+  </div>
+</div>
+
+<mt:Ignore>
+/*=====================================
+ソーシャル
+=======================================*/
+</mt:Ignore>
+
+<div id="social">
+<ul>
+<li><a href="http://twitter.com/HIDDEN_CHAMPION" target="_blank"><img src="/shared/images/icon/social_twitter.gif" width="65" height="17" alt="Twitter" /></a></li>
+<li><a href="http://www.myspace.com/hiddenchampion" target="_blank"><img src="/shared/images/icon/social_mySpace.gif" width="80" height="17" alt="My Space" /></a></li>
+<li><a href="http://hidden-champion.net/atom.xml" target="_blank"><img src="/shared/images/icon/social_rss.gif" width="48" height="17" alt="RSS" /></a></li>
+</ul>
+</div>
+
+<mt:Ignore>
+/*=====================================
+カテゴリアーカイブ
+=======================================*/
+</mt:Ignore>
+
+<mt:IfArchiveTypeEnabled archive_type="Category">
+<div class="widget-archive widget-archive-category widget">
+<h3 class="widget-header">Category</h3>
+<div class="widget-content">
+
+<$mt:setvar name="cat_count" value="1"$>
+<mt:TopLevelCategories>
+<mt:SubCatIsFirst>
+<ul class="pkg">
+</mt:SubCatIsFirst>
+
+<mt:If tag="CategoryCount">
+  <li class="<MTIf name="cat_count" op="%" value="2" eq="0">br</MTIf>"><a href="<$mt:CategoryArchiveLink$>"<mt:If tag="CategoryDescription"> title="<$mt:CategoryDescription remove_html="1" encode_html="1"$>"</mt:If>><$mt:CategoryLabel$> (<$mt:CategoryCount$>)</a>
+<mt:Else>
+<li class="<MTIf name="cat_count" op="%" value="2" eq="0">br</MTIf>"><$mt:CategoryLabel$>
+</mt:If>
+<$mt:SubCatsRecurse$>
+</li>
+
+<mt:SubCatIsLast>
+</ul>
+</mt:SubCatIsLast>
+
+<$mt:setvar name="cat_count" op="+" value="1"$>
+
+</mt:TopLevelCategories>
+</div>
+</div>
+</mt:IfArchiveTypeEnabled>
+
+<mt:Ignore>
+/*=====================================
+タグ
+=======================================*/
+</mt:Ignore>
+
+<$mt:setvar name="tag_count" value="1"$>
+
+<div class="widget-archive widget-tag-cloud widget">
+  <h3 class="widget-header">TAGS</h3>
+  <div class="widget-content">
+    <ul>
+    <mt:Tags top="60">
+      <li class="<MTIf name="tag_count" op="%" value="2" eq="0">br</MTIf>"><a href="<$mt:TagSearchLink$>"><$mt:TagName$></a></li>
+      <$mt:setvar name="tag_count" op="+" value="1"$>
+      </mt:Tags>
+    </ul>
+  </div>
+</div>
+
+<mt:Ignore>
+/*=====================================
+月別とブロガー　２カラム
+=======================================*/
+</mt:Ignore>
+
+<div class="widget-wrp">
+
+<mt:IfArchiveTypeEnabled archive_type="Monthly">  
+<mt:ArchiveList archive_type="Monthly">
+<mt:ArchiveListHeader>
+<div class="widget-archive-monthly widget-archive widget">
+<h3 class="widget-header">MONTHLY <a href="http://hidden-champion.net/news/archives.html">ARCHIVE</a></h3>
+<div class="widget-content">
+<ul>
+</mt:ArchiveListHeader>
+
+<li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveDate language="en" format="%B %Y"$> (<$mt:ArchiveCount$>)</a></li>
+
+<mt:ArchiveListFooter>
+</ul>
+</div>
+</div>
+</mt:ArchiveListFooter>
+</mt:ArchiveList>
+</mt:IfArchiveTypeEnabled>
+
+
+<mt:Ignore>
+/*=======
+ブロガー
+========*/
+</mt:Ignore>
+<div class="widget-bloger-list widget-archive  widget">
+<h3 class="widget-header">Bloger</h3>
+<div class="widget-content">
+<ul>
+<MTBlogs exclude_blogs="4,6,1,20,23, 31, 7, 24">
+<li><a href="<$mt:BlogURL$>"><$mt:BlogName$></a></li>
+</MTBlogs>
+</ul>
+</div>
+</div>
+
+</div>

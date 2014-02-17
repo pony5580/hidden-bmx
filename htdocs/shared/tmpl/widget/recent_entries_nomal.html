@@ -1,0 +1,53 @@
+<mt:If name="page_columns" eq="2">
+
+<mt:If tag="BlogEntryCount">
+    <mt:Entries lastn="10" unique="0">
+        <mt:EntriesHeader>
+<div class="widget-recent-entries widget-archives widget">
+    <h3 class="widget-header">RECENT NEWS</h3>
+    <div class="widget-content">
+        </mt:EntriesHeader>
+				
+				
+				<dl class="pkg" onclick="location.href='<$mt:EntryPermalink$>';return false;">
+            <dt>
+						
+						<mt:EntryAssets type="image" lastn="1" sort_order="ascend">
+						<mt:SetVarBlock name="imgw"><$MTAssetProperty property="image_width"></mt:SetVarBlock>
+						<mt:SetVarBlock name="imgh"><$MTAssetProperty property="image_height"></mt:SetVarBlock>
+						<MTIf name="imgw" gt="$imgh">
+						<img src="<$MTAssetThumbnailURL height="40"$>" class="asset-img-thumb" alt="<$MTEntryTitle$>" title="<$MTEntryTitle$>" />
+						<MTElse>
+						<img src="<$MTAssetThumbnailURL width="78"$>" class="asset-img-thumb" alt="<$MTEntryTitle$>" title="<$MTEntryTitle$>" />
+						</MTElse>
+						</MTIf>
+						
+						</mt:EntryAssets>
+						
+						</dt>
+            <dd>
+							<p class="date"><$MTEntryDate language="en" format="%Y %B,%d"$></p>
+							<p class="title"><a href="<$mt:EntryPermalink$>" onclick="return false;"><$mt:EntryTitle trim_to="30"$></a></p>
+						</dd>
+				</dl>
+				
+				<mt:Ignore>
+				<dl>
+            <dt><a href="<$mt:EntryPermalink$>"><$mt:EntryTitle$></a></dt>
+            <dd><$mt:EntryBody words="20" convert_breaks="1" $>&hellip;</dd>
+            <dd class="entry-meta"><mt:If tag="EntryAuthorDisplayName"><$mt:EntryAuthorDisplayName encode_html="1"$><mt:Else><$mt:EntryAuthorUsername encode_html="1"$></mt:If> | コメント(<$mt:EntryCommentCount$>)</dd>
+				</dl>
+				</mt:Ignore>
+
+
+        <mt:EntriesFooter>
+        
+    </div>
+</div>
+        </mt:EntriesFooter>
+		
+    </mt:Entries>
+</mt:If>
+
+
+</mt:If>

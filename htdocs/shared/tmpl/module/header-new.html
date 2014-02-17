@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:mixi="http://mixi-platform.com/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<$MTMixiOpenGraphMeta$> 
+<link rel="start" href="<$mt:BlogURL$>" title="HIDDEN CHAMPION HOME" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+<link rel="stylesheet" href="/shared/style/mt.css" type="text/css" />
+<link rel="stylesheet" href="/shared/js/sb/shadowbox.css" type="text/css" />
+<mt:Ignore>
+/*======================================================
+// blog index用のcss
+========================================================*/
+</mt:Ignore>
+<mt:If name="blog_flag">
+<link rel="stylesheet" href="/shared/style/exclusive/blog.css" type="text/css" />
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAArVFOXOb2RkI5zh8r2zQP5BTN82uLDIpcBVfdnnXbiCB5Po-LeBRfEdHJJtvsP4PQO2AVLE3DAIoJQQ"></script>
+<script type="text/javascript" src="/blog/shared/js/googleFeed.js"></script>
+</mt:If>
+<mt:Ignore>
+/*======================================================
+// blog index用のcss ここまで
+========================================================*/
+</mt:Ignore>
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="/shared/style/ie.css" />
+<![endif]-->
+<$mt:Var name="html_head"$>
+<meta name="keywords" content="HIDDEN-CHAMPION, ART, BMX, FASHION, FIXED, MUSIC, SKATE, SNOW, SURF" />
+<meta name="description" lang="ja" content="Hidden Champion is a free japanese Magazine featuring “hidden champions” of many cultures. The first issue appeared in August 2003. Since then it comes out 2 times a year and it´s available in good clubs, record shops, cafes and bars." />
+<title><$mt:Var name="title"$></title>
+</head>
+<body id="<$mt:Var name="body_id"$>" class="<$mt:Var name="page_layout"$>">
+
+<div id="container">
+<div id="container-inner">
+
+<div id="header" class="phase2">
+<div id="header-inner">
+<h1 id="header-name"><a href="http://hidden-champion.net/" accesskey="1">hidden-champion.net</a></h1>
+
+<div id="header-content">
+<div id="header-description" class="wrp">
+<h2><$mt:BlogDescription$></h2>
+<p id="navi_about"><a href="/about/"><img src="/shared/images/navi/navi_about.gif" width="36" height="13" alt="about" /></a></p>
+<$mt:Include widget="検索" $>
+</div>
+
+<!-- -->
+<div class="wrp">
+<$mt:Include module="テストナビゲーション" blog_id="1" $>
+</div>
+<!-- -->
+
+</div>
+</div>
+</div>
+<!-- header end -->

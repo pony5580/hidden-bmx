@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<$mt:PublishCharset$>" />
+    <link rel="stylesheet" href="/shared/css/mt.css" type="text/css" />
+		
+		<mt:Ignore>
+		/*======================================================
+		// blog index用のcss
+		========================================================*/
+		</mt:Ignore>
+		<mt:If name="blog_flag">
+		<link rel="stylesheet" href="/shared/css/exclusive/blog.css" type="text/css" />
+		</mt:If>
+		
+		
+		
+    <link rel="start" href="<$mt:BlogURL$>" title="ホーム" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+    <script type="text/javascript" src="/shared/js/mt.js"></script>
+		<script type="text/javascript" src="/shared/js/base.js"></script>
+		<script type="text/javascript" src="/shared/js/lib/prototype.js"></script>
+		<script type="text/javascript" src="/shared/js/shadowbox/adapter/shadowbox-prototype.js"></script>
+		<script type="text/javascript" src="/shared/js/shadowbox/shadowbox.js"></script>
+		<script type="text/javascript">
+		Shadowbox.loadSkin('', '/shared/js/shadowbox/skin'); // use the "classic" skin
+		Shadowbox.loadLanguage('en', '/shared/js/shadowbox/lang'); // use the English language
+		Shadowbox.loadPlayer(['img', 'qt'], '/shared/js/shadowbox/player'); // use img and qt players
+		window.onload = Shadowbox.init;
+		</script>
+    <$mt:Var name="html_head"$>
+    <script type="text/javascript">
+    var adminurl = '<$mt:CGIPath$>' + '<$mt:AdminScript$>';
+    var blog_id = '<$mt:BlogID$>';
+    var page_id = '<mt:IfArchiveType archive_type="Page"><$mt:PageID$><mt:Else><mt:Pages tag="@home"><$mt:PageID$></mt:Pages></mt:IfArchiveType>';
+    </script>
+    <$mt:CCLicenseRDF$>
+		
+		<meta name="keywords" content="HIDDEN-CHAMPION, ART, BMX, FASHION, FIXED, MUSIC, SKATE, SNOW, SURF" />
+		
+		<meta name="description" lang="ja" content="Hidden Champion is a free japanese Magazine featuring “hidden champions” of many cultures. The first issue appeared in August 2003. Since then it comes out 2 times a year and it´s available in good clubs, record shops, cafes and bars." />
+
+    <title><$mt:Var name="title"$></title>
+</head>
+<body id="<$mt:BlogTemplateSetID$>" class="<$mt:Var name="body_class"$> <$mt:Var name="page_layout"$>">
+    <div id="container">
+        <div id="container-inner">
+            <div id="header">
+                <div id="header-inner">
+                    <div id="header-content">
+                    <mt:If name="main_index">
+                        <h1 id="header-name"><a href="<$mt:BlogURL$>" accesskey="1"><$mt:BlogName encode_html="1"$></a></h1>
+                    <mt:Else>
+                        <div id="header-name"><a href="<$mt:BlogURL$>" accesskey="1"><$mt:BlogName encode_html="1"$></a></div>
+                    </mt:If>
+										
+										<$mt:Include widget="検索" $>
+						
+										
+						<div class="navi-wrp">
+							<h2 id="header-description"><$mt:BlogDescription$></h2>
+									<ul id="sub-navi-list">
+												<li><a href="/about/">About</a></li>
+										</ul>
+								<div id="main-navigation">
+										<div id="main-navigation-inner">
+												<$mt:Include module="ナビゲーション" $>
+										</div>
+								</div>
+						</div>
+												
+												<ul id="func-navi">
+													<li id="logo-myspcace"><a href="http://profile.myspace.com/index.cfm?fuseaction=user.viewProfile&friendID=1000426359" Target="_blank" >myspace.com</a></li>
+													<li id="logo-rss"><a href="http://hidden-champion.net/atom.xml">rss feed</a></li>
+												</ul>
+												
+                        <mt:ignore>
+                        <$mt:Include widget="サインイン" $>
+                        </mt:ignore>
+                    </div>
+                </div>
+            </div>

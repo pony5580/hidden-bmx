@@ -1,0 +1,33 @@
+<div class="widget-wrp"> 
+
+<mt:IfArchiveTypeEnabled archive_type="Monthly">  
+<mt:ArchiveList archive_type="Monthly">
+<mt:ArchiveListHeader>
+<div class="widget-archive-monthly widget-archive widget">
+<h3 class="widget-header">MONTHLY <a href="http://stage.hidden-champion.net/news/archives.html">ARCHIVE</a></h3>
+<div class="widget-content">
+<ul>
+</mt:ArchiveListHeader>
+
+<li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveDate language="en" format="%B %Y"$> (<$mt:ArchiveCount$>)</a></li>
+
+<mt:ArchiveListFooter>
+</ul>
+</div>
+</div>
+</mt:ArchiveListFooter>
+</mt:ArchiveList>
+</mt:IfArchiveTypeEnabled>
+
+<div class="widget-bloger-list widget-archive  widget">
+<h3 class="widget-header">Bloger</h3>
+<div class="widget-content">
+<ul>
+<MTBlogs exclude_blogs="1,4,6,20,7">
+<li><a href="<$mt:BlogURL$>"><$mt:BlogName$></a></li>
+</MTBlogs>
+</ul>
+</div>
+</div>
+
+</div>

@@ -1,0 +1,162 @@
+<MTApplyModifier trim_ex="ltrim,rtrim,trimcr">
+
+<mt:If name="page_columns" eq="2">
+	<div id="beta">
+    <div id="beta-inner">
+			<div class="widget-ad widget">
+					<h3 class="widget-header">ADVERTISEMENT</h3>
+					<div class="widget-content" id="ad-large">
+					<a href="/"><img src="/shared/images/ad/ad-dummy.gif" width="352" height="300" alt="hidden champion" /></a>
+					</div>
+			</div>
+      
+			<$mt:WidgetSet name="メインサイドバー"$>
+			
+			</div>
+</div>
+<mt:Else name="page_columns" eq="3">
+	
+	<div id="beta-wrp">
+	<div class="widget-ad widget">
+			<h3 class="widget-header">ADVERTISEMENT</h3>
+			<div class="widget-content" id="ad-large">
+					<a href="/"><img src="/shared/images/ad/ad-dummy.gif" width="352" height="300" alt="hidden champion" /></a>
+					</div>
+			</div>
+	</div>
+	<div id="beta">
+    <div id="beta-inner">		
+			
+			<mt:IfArchiveType archive_type="Page">			
+				<div class="widget-magazine-archive widget">
+					<h3 class="widget-header">MAGAZINE ARCHIVE</h3>
+					<div class="widget-content">
+					
+					<ul>
+					<mt:Pages limit="20">
+						<li onclick="location.href='<$MTPagePermalink encode_js="1"$>';return false;"><a href="<$MTPagePermalink$>"><$MTPageTitle remove_html="1"$></a></li>
+					</mt:Pages>
+					</ul>
+					
+					</div>
+				</div>
+			</mt:IfArchiveType>
+			
+			
+			<mt:IfArchiveType archive_type="Individual">
+			
+			<div class="widget-cover widget">
+				<h3 class="widget-header">Issue#12 Spring 2009</h3>
+				<div class="widget-content">
+				<img src="/shared/images/magazine/issue12/cover_thumb_2.jpg" width="175" height="230"  />
+				</div>
+			</div>
+			
+			<mt:If tag="entryCategory">
+			
+				<mt:entryID setvar="entry_id" />
+				<mt:topLevelParent>
+					<mt:categoryLabel setvar="top_category" />
+				</mt:topLevelParent>
+			
+			<div class="widget-category widget">
+			
+				<mt:subCategories include_current="1" category="$top_category">
+				
+				<mt:If tag="categoryCount">
+				<mt:SetVarBlock name="category_name"><mt:categoryLabel></mt:SetVarBlock>
+				
+				<mt:Entries>
+								
+				<MTUnless name="category_name" like="issue">
+				
+					<mt:EntriesHeader>
+							<h3 class="widget-header"><mt:getVar name="category_name" /></h3>
+							<div class="widget-content">
+							<ul>
+					</mt:EntriesHeader>
+					
+						<mt:entryID setvar="current_entry_id" />
+						
+						<mt:if name="current_entry_id" ne="$entry_id">
+						<li onclick="location.href='<mt:entryPermalink valid_html="1" />';return false;"><a href="javascript:void(0)"><mt:entryTitle encode_html="1" /></a></li>
+						</mt:if>
+					
+					<mt:EntriesFooter>
+					</ul>
+					</div>
+					</mt:EntriesFooter>
+
+				</MTUnless>
+				
+				</mt:Entries>
+				
+				</mt:If>
+				
+				<mt:subCatsRecurse />
+				
+				</mt:subCategories>
+				
+			
+			</div>
+			</mt:If>
+			</mt:IfArchiveType>
+
+			
+<mt:Ignore>
+<mt:if tag="entryCategory">
+  <mt:entryID setvar="entry_id" />
+  <mt:topLevelParent>
+    <mt:categoryLabel setvar="top_category" />
+  </mt:topLevelParent>
+  <ul>
+  <mt:subCategories include_current="1" category="$top_category">
+    <mt:if tag="categoryCount">
+		
+      <mt:setVarBlock name="category_name"><mt:categoryLabel></mt:setVarBlock>
+     
+		  <mt:entries>
+			
+				<mt:EntriesHeader>
+					<mt:getVar name="category_name" />
+				</mt:EntriesHeader>
+				
+        <mt:entryID setvar="current_entry_id" />
+        <mt:if name="current_entry_id" ne="$entry_id">
+    <li><a href="<mt:entryPermalink valid_html="1" />"><mt:entryTitle encode_html="1" /></a></li>
+        </mt:if>
+      </mt:entries>
+			
+    </mt:if>
+  <mt:subCatsRecurse />
+</mt:subCategories>
+  </ul>
+</mt:if>
+
+</mt:Ignore>
+
+		
+		</div>
+	</div>
+	
+</mt:If>
+
+
+
+
+<mt:If name="page_columns" eq="3">
+	<div id="gamma">
+		<div id="gamma-inner">
+			<div class="widget-ad2 widget">
+				<h3 class="widget-header">ADVERTISEMENT</h3>
+				<div class="widget-content">
+					<a href=""><img src="/shared/images/ad/long_01.jpg" width="176" height="550" alt="" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</mt:If>
+
+</MTApplyModifier>

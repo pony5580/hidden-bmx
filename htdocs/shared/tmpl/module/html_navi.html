@@ -1,0 +1,56 @@
+<ul id="main-navi">
+	<mt:If name="main_index">
+  <li id="navi-news">NEWS</li>
+  <mt:Else>
+  	<li id="navi-news"><a href="http://hidden-champion.net/">NEWS</a></li>
+  </mt:If>
+  
+  <li class="tab">/</li>
+  
+  <mt:If name="page_blogs">
+  <li id="navi-blog">BLOGs</li>
+  <mt:Else>
+  <li id="navi-blog"><a href="/blog/">BLOGs</a></li>
+  </mt:If>
+  
+  <li class="tab">/</li>
+  
+  <mt:If name="page_mag">
+  <li id="navi-mag">Magazine</li>
+  <mt:Else>
+  <li id="navi-mag"><a href="/magazine/">Magazine</a></li>
+  </mt:If>
+  
+  <li class="tab">/</li>
+  
+  <mt:If name="page_active">
+  <li id="navi-active">Active</li>
+  <mt:Else>
+  <li id="navi-active"><a href="/active/">Active</a></li>
+  </mt:If>
+</ul>
+<!-- main-navi end -->
+
+<mt:Ignore>
+<ul class="pkg">
+    <li id="navi-news" class="first<mt:If name="main_index"> on</mt:If><mt:IfArchiveType archive_type="Individual"> on</mt:IfArchiveType><mt:IfArchiveType archive_type="Monthly"> on</mt:IfArchiveType>"><a href="<$mt:BlogURL$>">NEWS</a></li>
+    		
+    <mt:Pages tag="@topnav">
+    <mt:SetVarBlock name="this_page_id"><$mt:PageID$></mt:SetVarBlock>
+    <li class="<mt:If name="nav_on" eq="$this_page_id"> on</mt:If>"><a href="<$mt:PagePermalink$>"><$mt:PageTitle$></a></li>
+    </mt:Pages>
+		
+    <li id="navi-blog"><a href="/blog/">BLOG</a></li>
+    
+		
+		<mt:Pages tags="@magazine" limit="1">
+    <mt:SetVarBlock name="this_page_id"><$mt:PageID$></mt:SetVarBlock>
+		
+		<MTIgnore>
+    <li id="navi-magazine" class="last<mt:If name="nav_on" eq="$this_page_id"> on</mt:If>"><a href="<$mt:PagePermalink$>"><$mt:PageTitle$></a></li>
+		</MTIgnore>	
+		<li id="navi-magazine"><$mt:PageTitle$></li>
+    </mt:Pages>
+    
+</ul>
+</mt:Ignore>

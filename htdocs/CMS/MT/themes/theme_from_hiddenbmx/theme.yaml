@@ -1,0 +1,318 @@
+--- 
+author_link: ''
+author_name: pony
+class: blog
+description: ''
+elements: 
+  custom_fields: 
+    component: commercial
+    data: 
+      eventinfoactive: 
+        default: 0
+        description: イベント情報を表示させたい時はチェックしてください。
+        name: EventInfoActive
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfoactive
+        type: checkbox
+      eventinfoaddress: 
+        default: ''
+        description: ''
+        name: EventInfoAddress
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfoaddress
+        type: text
+      eventinfoadmission: 
+        default: ''
+        description: ''
+        name: EventInfoAdmission
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfoadmission
+        type: text
+      eventinfodate: 
+        default: ''
+        description: "ex)\r\n2012.11.21 (wed) OPEN 20:00 ~ START 21:00 ~"
+        name: EventInfoDate
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfodate
+        type: text
+      eventinfotel: 
+        default: ''
+        description: "ex)\r\n000-000-000"
+        name: EventInfoTel
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfotel
+        type: text
+      eventinfotime: 
+        default: ''
+        description: ''
+        name: EventInfoTime
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfotime
+        type: text
+      eventinfourl: 
+        default: ''
+        description: "ex)\r\nhttp://www.hidden-champion.net"
+        name: EventInfoURL
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfourl
+        type: text
+      eventinfovenue: 
+        default: ''
+        description: "ex)\r\nXXXXXXX 東京都渋谷区道玄坂0-00-7 OOOビルB1F"
+        name: EventInfoVenue
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEventinfovenue
+        type: text
+      news_description: 
+        default: ''
+        description: "ex )\r\nDate: 2010.11.12 (fri) - 2010.12.2 (thu)\r\nVenue: SLOPE GALLERY"
+        name: news_description
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataNews_description
+        type: textarea
+      this_week_event: 
+        default: 0
+        description: チェックを入れるとサイドバー『THIS WEEK EVENT』に追加されます。
+        name: this_week_event
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataThisWeekEvent
+        type: checkbox
+      top_newsthumbnail: 
+        default: ''
+        description: Topページ一覧用サムネイル（258x142ピクセル）
+        name: Thumbnail
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: TopNewsThumbnail
+        type: image
+    importer: custom_fields
+  default_categories: 
+    component: ~
+    data: 
+      art: 
+        label: ART
+      bmx: 
+        label: BMX
+      book: 
+        label: BOOK
+      event: 
+        label: EVENT
+      fashion: 
+        label: FASHION
+      fixed: 
+        label: FIXED
+      movie: 
+        label: MOVIE
+      music: 
+        label: MUSIC
+      photo: 
+        label: PHOTO
+      recap: 
+        label: RECAP
+      skate: 
+        label: SKATE
+      snow: 
+        label: SNOW
+      store: 
+        label: STORE
+      surf: 
+        label: SURF
+    importer: default_categories
+  default_folders: 
+    component: ~
+    data: 
+      about: 
+        label: About
+      blog: 
+        label: blog
+      contact: 
+        label: Contact
+      magazine: 
+        label: magazine
+    importer: default_folders
+  template_set: 
+    component: ~
+    data: 
+      base_path: templates
+      label: exported_template set
+      templates: 
+        archive: 
+          template_1367: 
+            label: MonthlyArchive
+            mappings: 
+              monthly: 
+                archive_type: Monthly
+                file_template: %y/%m/%i
+                preferred: 1
+          template_1372: 
+            label: CategoryArchive
+            mappings: 
+              category: 
+                archive_type: Category
+                file_template: %-c/%i
+                preferred: 1
+        index: 
+          blog_index: 
+            label: MainPage
+            outfile: index.html
+            rebuild_me: 1
+          feed_recent: 
+            label: 最新記事のフィード
+            outfile: atom.xml
+            rebuild_me: 1
+          javascript: 
+            build_type: 2
+            label: JavaScript
+            outfile: shared/js/mt.js
+            rebuild_me: 0
+        individual: 
+          entry: 
+            label: EntryArchive
+            mappings: 
+              individual: 
+                archive_type: Individual
+                file_template: %y/%m/%-f
+                preferred: 1
+        module: 
+          categories: 
+            label: カテゴリ
+          comment_detail: 
+            label: コメント詳細
+          comments: 
+            label: コメント
+          sidebar: 
+            label: サイドバー
+          tags: 
+            label: タグ
+          template_1250: 
+            label: サイドバー２
+          template_1368: 
+            label: HTML-Header
+          template_1369: 
+            label: HTML-Footer
+          template_1373: 
+            label: EntryOutline
+          template_1375: 
+            label: EntryBody
+          template_1381: 
+            label: Search-Header
+          template_1382: 
+            label: Search-Footer
+          template_1383: 
+            label: Search-Sidebar
+          template_2084: 
+            label: EntryList
+          template_2085: 
+            label: NavNewsCategory
+          template_2086: 
+            label: EntryBlock
+          template_2145: 
+            label: CommentRenew
+          template_2146: 
+            label: CommentDetailRenew
+          trackbacks: 
+            label: トラックバック
+        system: 
+          comment_listing: 
+            label: コメント一覧
+          comment_preview: 
+            label: コメントプレビュー
+          comment_response: 
+            label: コメント完了
+          dynamic_error: 
+            label: ダイナミックパブリッシングエラー
+          popup_image: 
+            label: ポップアップ画像
+          search_results: 
+            label: 検索結果
+        widget: 
+          category_archive_list: 
+            label: カテゴリアーカイブ
+          monthly_archive_list: 
+            label: 月別アーカイブ
+          openid: 
+            label: OpenID対応
+          powered_by_footer: 
+            label: 月別とブロガー　２カラム
+          recent_assets: 
+            label: アイテム
+          recent_comments: 
+            label: 最近のコメント
+          recent_entries_expanded: 
+            label: 最近のブログ記事 (拡張)
+          search: 
+            label: 検索
+          signin: 
+            label: サインイン
+          tag_cloud: 
+            label: タグクラウド
+          template_1252: 
+            label: 最新ブログ記事一覧２
+          template_1257: 
+            label: ソーシャル
+          template_752: 
+            label: 最新ブログ記事一覧
+        widgetset: 
+          blog_activity: 
+            label: アクティビティ
+            order: 1000
+            widgets: 
+              - 最近のコメント
+              - アイテム
+              - タグクラウド
+              - OpenID対応
+          blog_archives: 
+            label: アーカイブ
+            order: 1000
+            widgets: 
+              - カテゴリアーカイブ
+              - 月別アーカイブ
+          main_sidebar: 
+            label: メインサイドバー
+            order: 1000
+            widgets: 
+              - 最新ブログ記事一覧
+              - カテゴリアーカイブ
+              - タグクラウド
+              - 月別とブロガー　２カラム
+          template_1251: 
+            label: メインサイドバー２
+            order: 1000
+            widgets: 
+              - 最新ブログ記事一覧２
+              - カテゴリアーカイブ
+              - タグクラウド
+              - 月別とブロガー　２カラム
+          template_182: 
+            label: サブサイドバー
+            order: 1000
+            widgets: 
+              - 最近のブログ記事 (拡張)
+              - 月別アーカイブ
+              - タグクラウド
+    importer: template_set
+id: theme_from_hiddenbmx
+label: NEWS | HIDDEN-BMX
+name: NEWS | HIDDEN-BMX
+version: '1.0'

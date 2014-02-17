@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* ------------------------------------------------------
+
+2010.03.03
+
+by PONY
+
+name:           blog.css
+
+description:    blog definition
+
+--------------------------------------------------------- */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+bloger [alpha]
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#page-blogs #alpha{
+	margin: 0px;
+	width: 860px;
+}
+
+#page-blogs #blogs-timeline {
+	float: left;
+	width: 540px;
+	margin-right: 20px;
+}
+
+#page-blogs #blogs-timeline h3.widget-header {
+	height: 41px;
+	margin-bottom: 20px;
+	width: 100%;
+	background: url(../../images/title/timeline.gif) no-repeat;
+}
+
+.blogs-wrp {width:860px;}
+
+.blogs-wrp .article {
+	position: relative;
+	float: left;
+	display: inline;
+	margin: 0px 16px 15px 0px;
+	width:130px;
+}
+
+
+.blogs-wrp .br { margin-right: 0px; float:right;}
+
+.blogs-wrp .article a {
+	display: block;
+	width: 130px;
+	font-weight: bold;
+}
+.blogs-wrp .article .imgWrp {
+	display: block;
+	overflow: hidden;
+	width: 128px;
+	height: 78px;
+	border: 1px solid #000;
+}
+
+
+
+.blogs-wrp .article img { vertical-align:text-bottom; }
+.blogs-wrp .article .date {
+	color: #999;
+	line-height: 1;
+	font-size: 11px;
+}
+
+
+
+.blogs-wrp .article .imgWrp{height:128px;}
+.blogs-wrp .article .imgWrp table{vertical-align:middle;}
+.blogs-wrp .article .dateTime{ display: none; }
+
+.blogs-wrp .article .name {
+	display: block;
+	font-size: 11px;
+	color: #000;
+	margin: 5px 0px 3px;
+}
+
+
+.blogs-wrp  .new { display: none; }
+
+.blogs-wrp .newEntry .new {
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	display: block;
+	width: 31px;
+	height: 31px;
+	background: url(../../images/icon/new.gif) no-repeat;
+}
+
+.article a:hover .name {
+	color: #F00;
+}
+
+
+
+/* Content ---------------------------------------------------------------- */
+
+.bloger-wrp {
+}
+
+.bloger-wrp .widget-selected {
+	margin-bottom: 40px;
+}
+
+/*
+.widget .asset-header {
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 2px solid #000000;
+}
+*/
+
+.widget .asset-header h3 {
+	line-height: 1;
+	font-weight: bold;
+	font-size: 140%;
+	margin: 0px 0px 9px;
+}
+
+.asset-contents .article {
+	float: left;
+	width: 133px;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 10px 0px;
+	margin: 0px 12px 10px 0;
+	cursor: pointer;
+}
+
+.asset-contents .end {
+	margin: 0px 0px 10px 0;
+}
+
+.asset-contents .article:hover,
+.asset-contents .article:hover dd p a {
+	color: #FF0000;
+}
+
+.asset-contents .article dd p a:hover {
+	text-decoration: none!important;
+}
+
+.asset-contents .cmr {
+	margin-right: 0px;
+}
+
+.asset-contents .article dt,
+.asset-contents .article dd {
+}
+
+.asset-contents .article dt {
+	margin-bottom: 10px;
+	line-height: 1;
+	height: 133px;
+	overflow: hidden;
+}
+
+.asset-contents .article dd {
+	
+}
+
+.asset-contents .article dd h4 {
+	line-height: 1;
+	font-size: 120%;
+	margin: 0;
+	font-weight: bold;
+}
+
+.asset-contents .article dd p {
+	line-height: 1;
+	margin: 0;
+	font-size: 100%;
+}
+
+.asset-contents .article dd p a {
+	color: #000000;
+}
+
+.asset-contents .article dd p span {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.asset-contents .article dd p.date {
+	margin-top: 9px;
+}
+
+.asset-contents .article dd p.txt {
+	line-height: 1.5;
+	margin-top: 7px;
+}
+
+/* Utilities -------------------------------------------------------------- */
+
+.asset-contents .article:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+
+.asset-contents .article {
+    height: 1%;
+}
+
+
+/* Custom Styles ---------------------------------------------------------- */
+
+
