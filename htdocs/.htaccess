@@ -2,7 +2,7 @@
 deny from all
 </Files>
 Options -Indexes
-AuthUserFile /web/hidden-bmx.com/htdocs/
+AuthUserFile /home/sites/heteml/users/d/i/m/dim/web/hidden-bmx.com/htdocs/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Please enter your ID and password"
 AuthType Basic
