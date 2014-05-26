@@ -11,4 +11,5 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(www\.hidden-bmx\.com)(:80)? [NC]
 RewriteRule ^(.*) http://hidden-bmx.com/$1 [R=301,L]
 order deny,allow
+AddOutputFilter INCLUDES .html
 
