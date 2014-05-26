@@ -1,0 +1,14 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+AuthUserFile /web/hidden-bmx.com/htdocs/
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user 
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.hidden-bmx\.com)(:80)? [NC]
+RewriteRule ^(.*) http://hidden-bmx.com/$1 [R=301,L]
+order deny,allow
+
