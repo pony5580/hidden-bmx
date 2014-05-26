@@ -1,0 +1,72 @@
+// Variables -----------------------------------------------------------------
+
+// HTML5
+$html5 : true;
+
+// compass ブラウザサポート
+$legacy-support-for-ie6                 : true;
+$legacy-support-for-ie7                 : true;
+
+$experimental-support-for-webkit        : true;
+$experimental-support-for-mozilla       : true;
+$experimental-support-for-opera         : true;
+$experimental-support-for-microsoft     : true;
+$experimental-support-for-khtml         : false;
+
+//ie9用 svg
+$experimental-support-for-svg: true;
+
+// 画像パス
+$imgPath : "shared/images/";
+
+	// commonフォルダ内の画像のパス
+	$commonImgPath: "shared/images/";
+
+// Compass Text Replacement
+// Configurable Variables
+$hide-text-direction : right;
+
+
+// 標準font-family
+$fontFamily : 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Arial, sans-serif;
+
+// Your basic settings for the grid.
+$total-cols         : 12            !default;
+$main-width         : 976px         !default;
+$grid-width         : 64px          !default;
+$grid-gutter-width  : 16px          !default;
+
+// default background color
+$bgColor : #fff;
+
+// default text color
+$textColor : #000000;
+
+// default button color
+$btnColor : #0060b0;
+
+// color val
+$black              : #000000;
+$white              : #ffffff;
+$red                : #ff0000;
+
+// error
+$error_color       : #ffe5e5;
+
+// gray variation
+$gray_right3       : #f0f0f0;
+$gray_right2       : #e4e4e4;
+$gray_right1       : #dcdcdc;
+$gray              : #8d8d8d;
+$gray_dark1        : #6d6b6b;
+$gray_dark2        : #363434;
+
+//link color
+$linkColor          : #000000;
+$linkColor_visited  : #000000;
+$linkColor_hover    : #004b89;
+$linkColor_active   : #004b89;
+$linkColor_forcus   : #004b89;
+
+// border color
+$border_color : #cccccc;

@@ -1,0 +1,104 @@
+/* ===== Initializr Styles ==================================================
+   ========================================================================== */
+html,body {
+    font-family: $fontFamily;
+}
+
+html {
+    height: 100%;
+    background : #F8F8F8;
+}
+
+body {
+    background: image-url("common/bg.gif") repeat-x top #ffffff;
+}
+
+a {
+    @include link-colors($linkColor, $linkColor_hover, $linkColor_active, $linkColor_visited, $linkColor_forcus);
+}
+
+button {
+    @include appearance(none);
+    border: none;
+    background-color : transparent;
+    &:focus {
+        outline: none;
+    }
+}
+
+select,
+input,
+button,
+textarea {
+    font-family: $fontFamily;
+}
+
+// Change the white to any color ;)
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/* ==============
+    Grobal HEADER
+   ============== */
+#header-global {
+    background-color: #FFF;
+    margin-bottom: 0px;
+    #logo {
+        @include float(left);
+        width: 25%;
+        text-align: center;
+        padding: 12px;
+        display:block;
+        background-color: #000;
+        border-bottom: 1px solid #000;
+    }
+}
+
+#nav-global {
+    @include clearfix;
+    .navbar-nav {
+        width: 55%;
+        border: none;
+        border-bottom: 1px solid #eaeaea;
+        li {
+            position: relative;
+            width: 25%;
+            a {
+                padding: 0px;
+                display: block;
+                font-family: "helvetica",sans-serif;
+                height: 54px;
+                line-height: 54px;
+                border-right: 1px solid #eaeaea;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ==============
+    Contents
+   ============== */
+.contents {
+    @extend .pie-clearfix;
+    width : $main-width;
+    margin : (30px - 6) auto 0;
+}
+
+#subContent {
+    @include grid(3);
+}
+
+#mainContent {
+    @include grid(9);
+}
+
+/* ==============
+    Global Footer
+   ============== */
+#globalFooter{
+}
+
+footer.global-footer {
+}

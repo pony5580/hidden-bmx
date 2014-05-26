@@ -41,97 +41,239 @@ DD_belatedPNG.fix('.png_bg');
 </script>
 <![endif]-->
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/shared/css/main.css">
 
-<link rel="stylesheet" href="/shared/css/normalize.css">
-<link rel="stylesheet" href="/shared/css/base.css">
-<link rel="stylesheet" href="/shared/css/jquery.jscrollpane.css">
-<link rel="stylesheet" href="/shared/css/style.css">
-
-<script type="text/javascript" src="/shared/js/jquery-1.8.1.min.js"></script>
-<script type="text/javascript" src="/shared/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="/shared/js/jquery.sharrre-1.3.4.min.js"></script>
-<script type="text/javascript" src="/shared/js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="/shared/js/jquery.jscrollpane.min.js"></script>
-
-<script type="text/javascript" src="/shared/js/spectragram.min.js"></script>
-<script type="text/javascript" src="/shared/js/feature.js"></script>
-<script type="text/javascript" src="/shared/js/purl.js"></script>
-<script type="text/javascript" src="/shared/js/project.js"></script>
-<!---->
-
-
-
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="/shared13/js/html5shiv.js"><\/script>')</script>
+<![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/shared13/js/jquery.min.js"><\/script>')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script>window._ || document.write('<script src="/shared13/js/underscore-min.js"><\/script>')</script>
 
 </head>
 
 
 <body>
-<div id="wrapper"> 
-	<!--header-->
-	<!--#include virtual="/shared/include/common/header.html" -->
-	<!--/header--> 
-	
-	<!--features-->
-	<!--#include virtual="/shared/include/top/features.html" -->
-	<!--/features--> 
-		
-	<!--nav_news_category-->
-	
-	
-	<!--/nav_news_category-->
-	
-	<!--contents-->
-	<div id="contents">
-		<div id="contents_inner" class="cf"> 
-			<!--contents_left-->
-			<div id="contents_left"> 
-				<!--list_news-->
-				<section id="list_news">
-				
-				 
-					<!--article_entry-->
-					<!--article_entry-->
-<article class="cf">
-	
-	<div class="right">
-		<header>
-			<a href="http://hidden-bmx-local.pony.com/news/2014/02/hoge.html" rel="bookmark"><h1>hoge</h1></a>
-			
-		</header>
-		<p>テスト...</p>
-		<footer>
-			<div class="f_left">
-				<time datetime="2014-02-15">February 15, 2014</time>
-			</div>
-			<div class="f_right cf">
-				<div class="share cf" ><span class="fbBtn"><iframe src="http://www.facebook.com/plugins/like.php?locale=en_US&href=http://hidden-bmx-local.pony.com/news/2014/02/hoge.html&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:84px; height:21px;" allowTransparency="true"></iframe></span><span class="twitterBtn"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://hidden-bmx-local.pony.com/news/2014/02/hoge.html" data-text="hoge" data-count="horizontal" data-via="HIDDEN_CHAMPION" data-lang="en">Tweet</a>
-<script>!function(d,s,id){var
-js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span>
+<body>
+  <a class="sr-only" href="#content">Skip to main content</a>
+
+  <!-- Docs master nav -->
+  <header id="header-global" role="banner">
+  <div class="header-container">
+    <div class="header-header">
+      <a href="/" id="logo"><img src="shared/images/common/logo.png" height="30" width="160" alt=""></a>
+    </div>
+    <nav id="nav-global" role="navigation">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="../getting-started">NEWS</a>
+        </li>
+        <li>
+          <a href="../css">FEATURE</a>
+        </li>
+        <li>
+          <a href="../components">BLOG</a>
+        </li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://expo.getbootstrap.com">Expo</a></li>
+        <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+      </ul> -->
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content">
+      	<img src="shared/images/cover/HIDDENBMX_Cover_PR.jpg" width="100%" alt="">
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-3" role="main">
+				<!-- Examples
+				================================================== -->
+				<div class="bs-docs-section">
+				<h1 id="top-news" class="page-header">NEWS</h1>
+				<div class="row bs-examples">
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
 				</div>
-			</div>
-		</footer>
-		
-	</div>
-</article>
-<!--/article_entry-->
-					<!--/article_entry--> 
-				 
-				
-				</section>
-				<!--list_news--> 
-			</div>
-			<!--/contents_left-->
-			<!--sidebar-->
-			<!--#include virtual="/shared/include/common/mt-sideMenu.html" -->
-			<!--/sidebar-->
-		</div>
-	</div>
-	
-	<!--/contents--> 
-	<!--footer-->
-	<!--#include virtual="/shared/include/common/footer.html" --> 
-	<!--/footer--> 
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				</div>
+				</div>
+				</div>
+
+
+        </div>
+        <div class="col-md-3" role="main">
+				<!-- Examples
+				================================================== -->
+				<div class="bs-docs-section">
+				<h1 id="top-news" class="page-header">FEATURE</h1>
+				<div class="row bs-examples">
+				<div class="col-xs-12 col-md-12">
+				  <a href="">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				  </a>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a href="">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				  </a>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a href="">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				  </a>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a href="">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				  </a>
+				</div>
+				</div>
+				</div>
+
+
+        </div>
+        <div class="col-md-3" role="main">
+				<!-- Examples
+				================================================== -->
+				<div class="bs-docs-section">
+				<h1 id="top-news" class="page-header">BLOG</h1>
+				<div class="row bs-examples">
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				</div>
+				<div class="col-xs-12 col-md-12">
+				  <a class="thumbnail" href="../examples/starter-template/">
+				    <img src="http://hidden-champion.net/STM_thm.jpg">
+				  </a>
+				  <h4>Satomi Yamauchi 1st PHOTO exhibition "YOU WERE HERE - Recap</h4>
+				  <p>カルチャー・音楽シーンを中心にフォトグラファーとして活動している山内聡美の初写真展が、4月21日から中目黒ラウンジにて開催されいる。今...</p>
+				</div>
+				</div>
+				</div>
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="bs-docs-sidebar hidden-print" role="complementary">
+            <div id="ad-wrp">
+            	<img src="http://hidden-champion.net/Volcom%20Dyz.jpg" width="263" alt="VOLCOM">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+    <div class="bs-docs-social">
+  <ul class="bs-docs-social-buttons">
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+    </li>
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+    </li>
+    <li class="follow-btn">
+      <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Bootstrap">Tweet</a>
+    </li>
+  </ul>
 </div>
-<!--#include virtual="/shared/include/common/htmlFooter.html" --> 
+
+
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <ul class="bs-docs-footer-links muted">
+      <li>Currently v3.1.1</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
+      <li><a href="../2.3.2/">v2.3.2 docs</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">About</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.getbootstrap.com">Expo</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,106 @@
+/* ===================
+    common mixin and extend
+   =================== */
+.defalutInner {
+    @extend .clearfix;
+    width : $main-width;
+    margin : 0 auto;
+}
+
+.clearfix {
+  overflow: hidden;
+  @include has-layout;
+}
+
+.pie-clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @include has-layout;
+}
+
+.clear {
+  height: 0;
+  width: 0;
+  clear: both;
+}
+
+.squish-text {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+.dummy-target {
+  display: none;
+}
+
+@mixin grid($size: 1){
+    @include float(left);
+    margin-right: 0px;
+    padding: 0px;
+    margin-left: $grid-gutter-width;
+    width: ($grid-width * $size)+($grid-gutter-width*($size - 1));
+}
+
+@mixin arrowRight($color: #ffffff) {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3px 0 3px 5px;
+    border-color: transparent transparent transparent $color;
+}
+
+@mixin icon-circle($color: #ffffff) {
+    width: 16px;
+    height: 16px;
+    background-color:$color;
+    @include border-radius(50%);
+}
+
+@mixin icon-arrow-right {
+  content:'';
+  display: block;
+  position:absolute;
+  top: 50%;
+  right: 21px;
+  margin-top: -3px;
+  @include sprite($arrow_right_child);
+}
+
+@mixin icon-arrow-top($color: #ffffff) {
+  content:'';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8px 3px 8px 3px;
+  border-color: transparent transparent $color transparent;
+}
+
+@mixin PIE() {
+  behavior: url("/shared13/css/PIE.htc");
+}
+
+.icon-arrow {
+  &:before,&:after, {
+  content:'';
+  display: block;
+  position:absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -2px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3px 0 3px 5px;
+  border-color: transparent transparent transparent #fff;
+  }
+  &:before {
+    z-index: 100;
+    right: 19px;
+    border-color: transparent transparent transparent #fff;
+  }
+}

@@ -1,0 +1,2552 @@
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 11, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 30, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 79, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+/* line 91, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 111, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 131, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 136, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 141, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 146, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 151, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 168, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 173, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 181, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+/* line 190, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+/* line 200, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 209, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 218, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 231, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+/* line 241, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+/* line 249, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 259, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 267, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 275, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 279, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 291, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 298, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/* line 306, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+/* line 316, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+/* line 331, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 340, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 352, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 364, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 372, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 384, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+/* line 398, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 413, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 425, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 440, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 453, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 465, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 479, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 491, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+/* line 500, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 511, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 524, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ===================
+    common mixin and extend
+   =================== */
+/* line 4, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_assets.scss */
+.defalutInner, #globalHeader .inner, #globalFooter .footerContents .inner {
+  width: 976px;
+  margin: 0 auto;
+}
+
+/* line 10, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_assets.scss */
+.clearfix, .defalutInner, #globalHeader .inner, #globalFooter .footerContents .inner, #globalHeader aside, .contents, #globalFooter div.footerLink ul, .breadcrumbs ul, .wrapper-line, .wrapper-withImage, .wrapper-withImage-top, .wrapper-withImage-left, .wrapper-withImage > a, .wrapper-withImage-top > a, .wrapper-withImage-left > a, .divideBy, .divider-1, .divider-2, .divider-3, .divider-4, .news, .news a.news-line dl, dl.arrowbox_left_element-with-icon {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 15, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_assets.scss */
+.pie-clearfix, #globalNavigation ul {
+  *zoom: 1;
+}
+/* line 16, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_assets.scss */
+.pie-clearfix:after, #globalNavigation ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 24, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_assets.scss */
+.clear {
+  height: 0;
+  width: 0;
+  clear: both;
+}
+
+/* line 30, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_assets.scss */
+.squish-text, .btn-pagetop {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+/* line 5, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_cssfonts.scss */
+body {
+  font: 13px/1.231 arial,helvetica,clean,sans-serif;
+  *font-size: small;
+  /* for IE */
+  *font: x-small;
+  /* for IE in quirks mode */
+}
+
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_cssfonts.scss */
+select,
+input,
+button,
+textarea {
+  font: 99% arial,helvetica,clean,sans-serif;
+}
+
+/**
+ * To help tables remember to inherit
+ */
+/* line 24, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_cssfonts.scss */
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_cssfonts.scss */
+pre,
+code,
+kbd,
+samp,
+tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%;
+}
+
+/* ===== Initializr Styles ==================================================
+   ========================================================================== */
+/* line 3, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+html, body {
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif;
+}
+
+/* line 7, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+html {
+  background: url('/shared13/images/common/bg.gif') repeat-x top white;
+}
+
+/* line 11, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+a {
+  color: black;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: black;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #004b89;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #004b89;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #004b89;
+}
+
+/* ==============
+    Grobal HEADER
+   ============== */
+/* line 22, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalHeader h1 {
+  float: left;
+  margin: 0;
+}
+/* line 25, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalHeader h1 a, #globalHeader h1 img {
+  display: block;
+}
+/* line 29, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalHeader aside {
+  float: right;
+  padding-top: 36px;
+}
+/* line 33, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalHeader aside a {
+  float: left;
+  margin-right: 8px;
+  background-color: #0060b0;
+}
+/* line 37, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalHeader aside a.langEn {
+  padding: 0px 31px;
+}
+/* line 40, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalHeader aside a.toJaxa {
+  background-color: #004b89;
+}
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalHeader aside a:hover {
+  background-color: #002e55 !important;
+}
+
+/* ==============
+    Contents
+   ============== */
+/* line 53, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+.contents {
+  width: 976px;
+  margin: 24px auto 0;
+}
+
+/* line 59, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#subContent {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 224px;
+}
+
+/* line 63, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#mainContent {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 704px;
+}
+
+/* ==============
+    Global Footer
+   ============== */
+/* line 70, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter {
+  position: relative;
+  width: 100%;
+  background: url('/shared13/images/common/footer_bg.png') top no-repeat;
+  letter-spacing: 1px;
+}
+/* line 75, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter .btn-pagetop {
+  position: absolute;
+  z-index: 100;
+  top: 77px;
+  right: 8px;
+}
+/* line 81, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter .ornament {
+  position: relative;
+  display: block;
+  width: 976px;
+  margin: 0 auto;
+  height: 124px;
+  margin-bottom: 36px;
+  background: url('/shared13/images/common/footer_bgimg.png') top no-repeat;
+}
+/* line 90, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter .footerContents {
+  background: #002e55;
+}
+/* line 92, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter .footerContents .inner {
+  position: relative;
+}
+/* line 98, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter .pagelinksHeader {
+  background: url('/shared13/images/common/dotline.gif') repeat-x bottom;
+}
+/* line 100, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter .pagelinksHeader h1 {
+  font-size: 107.69231%;
+  line-height: 2.28571;
+  font-weight: normal;
+  padding-bottom: 8px;
+  padding-left: 9px;
+  margin: 0px;
+  color: white;
+}
+/* line 110, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter section.pagelinks {
+  color: white;
+}
+/* line 112, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter section.pagelinks ul {
+  padding-top: 7px;
+  margin: 0px;
+  padding-bottom: 37px;
+}
+/* line 116, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter section.pagelinks ul li {
+  list-style: none;
+  padding-left: 14px;
+  margin-top: 7px;
+}
+/* line 120, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter section.pagelinks ul li.hr {
+  padding-bottom: 7px;
+}
+/* line 124, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter section.pagelinks ul a {
+  color: white;
+  font-size: 92.30769%;
+  position: relative;
+  line-height: 1.33333;
+  padding-left: 18px;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter section.pagelinks ul a:visited {
+  color: white;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter section.pagelinks ul a:focus {
+  color: #0a8bf5;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter section.pagelinks ul a:hover {
+  color: #0a8bf5;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter section.pagelinks ul a:active {
+  color: white;
+}
+/* line 130, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter section.pagelinks ul a:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -2px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3px 0 3px 5px;
+  border-color: transparent transparent transparent white;
+}
+/* line 138, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter section.pagelinks ul a:hover::before {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3px 0 3px 5px;
+  border-color: transparent transparent transparent #0a8bf5;
+}
+/* line 144, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter div.footerLink {
+  font-size: 76.92308%;
+  line-height: 7;
+  padding-top: 2px;
+  clear: both;
+  background: url('/shared13/images/common/dotline.gif') repeat-x top;
+}
+/* line 150, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter div.footerLink #copyright {
+  float: left;
+  margin: 0;
+  padding-left: 24px;
+  color: white;
+}
+/* line 156, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter div.footerLink ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 162, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter div.footerLink li {
+  float: left;
+  margin-right: 80px;
+}
+/* line 166, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/core/_layout.scss */
+#globalFooter div.footerLink a {
+  color: white;
+  display: block;
+  line-height: 7;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter div.footerLink a:visited {
+  color: white;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter div.footerLink a:focus {
+  color: #0a8bf5;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter div.footerLink a:hover {
+  color: #0a8bf5;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalFooter div.footerLink a:active {
+  color: white;
+}
+
+/* line 24, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn {
+  color: white;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  background-color: #0060b0;
+  text-decoration: none;
+  position: relative;
+  line-height: 1.33333;
+  padding: 12px 16px;
+  padding-right: 50px;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn:visited {
+  color: white;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn:focus {
+  color: white;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn:hover {
+  color: white;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn:active {
+  color: white;
+}
+/* line 34, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn:hover {
+  background-color: #002e55;
+}
+
+/* line 40, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-withArrow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -8px;
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -232px -132px;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-mini {
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  font-size: 84.61538%;
+  background: #0060b0;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0px 20px;
+}
+/* line 76, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-mini:hover {
+  background-color: #002e55;
+}
+
+/* line 80, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-min-d1 {
+  background: #004b89;
+}
+
+/* line 96, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-short {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100px;
+}
+
+/* line 103, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-long {
+  padding-left: 0;
+  padding-right: 0;
+  width: 208px;
+}
+
+/* line 130, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c1 {
+  background: #00b050;
+}
+/* line 132, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c1:hover {
+  background: #005527;
+}
+
+/* line 130, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c2 {
+  background: #b01500;
+}
+/* line 132, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c2:hover {
+  background: #891000;
+}
+
+/* line 130, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c3 {
+  background: #b09900;
+}
+/* line 132, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c3:hover {
+  background: #554a00;
+}
+
+/* line 130, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c4 {
+  background: #b05000;
+}
+/* line 132, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c4:hover {
+  background: #552700;
+}
+
+/* line 130, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c5 {
+  background: #b00094;
+}
+/* line 132, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-c5:hover {
+  background: #550047;
+}
+
+/* line 152, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-pagetop {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -288px -198px;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+/* line 156, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-pagetop:hover {
+  background-position: -262px -198px;
+}
+
+/* line 161, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-back {
+  color: white;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #004b89;
+  position: relative;
+  line-height: 1.33333;
+  padding: 12px 16px;
+  padding-right: 50px;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn-back:visited {
+  color: white;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn-back:focus {
+  color: white;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn-back:hover {
+  color: white;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.btn-back:active {
+  color: white;
+}
+/* line 171, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-back:hover {
+  background-color: #002e55;
+}
+/* line 174, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_buttons.scss */
+.btn-back:after {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -196px -150px;
+  width: 16px;
+  height: 16px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -8px;
+}
+
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation {
+  background: #0060b0;
+}
+/* line 34, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation .inner {
+  width: 976px;
+  margin: 0 auto;
+}
+/* line 38, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation ul {
+  padding: 0 0 0 16px;
+  margin: 0;
+}
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li {
+  float: left;
+  text-align: center;
+  background-color: #004b89;
+}
+/* line 47, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li a {
+  font-size: 107.69231%;
+  color: white;
+  display: block;
+  letter-spacing: 1px;
+  padding: 0px;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: 56px;
+  background-color: #0060b0;
+  border-left: 1px solid #0073d2;
+  border-right: 1px solid #004b89;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalNavigation li a:visited {
+  color: white;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalNavigation li a:focus {
+  color: white;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalNavigation li a:hover {
+  color: white;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+#globalNavigation li a:active {
+  color: white;
+}
+/* line 59, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li a:hover {
+  background-color: #001e37;
+}
+/* line 64, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navAbout a {
+  width: 311px;
+  border-left: none;
+}
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navAbout:hover a {
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+/* line 72, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navAbout:hover {
+  background-color: #0060b0;
+}
+/* line 76, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navEducation a {
+  width: 158px;
+}
+/* line 79, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navUtilization a {
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 159px;
+  border-right: none;
+}
+/* line 85, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navJoin a {
+  position: relative;
+  width: 159px;
+  border-left: none;
+  background-color: #004b89;
+  border-right: 1px solid #002e55;
+}
+/* line 91, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navJoin a:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -79px;
+  left: -35px;
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -98px 0px;
+  width: 96px;
+  height: 95px;
+}
+/* line 99, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navJoin a:hover {
+  background-color: #002e55;
+}
+/* line 102, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navJoin a:hover:after {
+  background-position: 0px 0px;
+}
+/* line 106, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navMaterialDB a {
+  width: 159px;
+  background-color: #004b89;
+  border-left: 1px solid #0060b0;
+  border-right: none;
+}
+/* line 111, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li#navMaterialDB a:hover {
+  background-color: #002e55;
+}
+/* line 115, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#globalNavigation li.blank span {
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: block;
+  height: 56px;
+  width: 8px;
+  background-color: #0060b0;
+}
+
+/* ==============
+    Category Navigation
+   ============== */
+/* line 131, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#categoryNavigation dl, #categoryNavigation dt, #categoryNavigation dd {
+  margin: 0;
+  padding: 0;
+}
+/* line 135, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#categoryNavigation dl {
+  margin-bottom: 40px;
+}
+/* line 138, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#categoryNavigation dd {
+  margin-top: -8px;
+}
+/* line 140, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#categoryNavigation dd a.navbtn-categoryChild:first-child {
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* line 144, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+#categoryNavigation dd a.navbtn-categoryChild:last-child {
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 0px;
+}
+
+/* line 152, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.navbtn-categoryParent {
+  color: white;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 92.30769%;
+  display: block;
+  text-decoration: none;
+  background: #001e37;
+  position: relative;
+  line-height: 4.66667;
+  padding: 0px 17px 8px;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryParent:visited {
+  color: white;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryParent:focus {
+  color: white;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryParent:hover {
+  color: white;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryParent:active {
+  color: white;
+}
+/* line 163, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.navbtn-categoryParent:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -12px;
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -214px -132px;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 174, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.navbtn-categoryChild {
+  color: white;
+  font-size: 92.30769%;
+  display: block;
+  text-decoration: none;
+  background-color: #0060b0;
+  position: relative;
+  line-height: 3.25;
+  padding: 0px 17px 2px;
+  background-image: url('/shared13/images/common/navigation/dotline_default_top.gif'), url('/shared13/images/common/navigation/dotline_default_bottom.gif');
+  background-repeat: repeat-x,repeat-x;
+  background-position: top,bottom;
+}
+/* line 18, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryChild:visited {
+  color: white;
+}
+/* line 21, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryChild:focus {
+  color: white;
+}
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryChild:hover {
+  color: white;
+}
+/* line 27, /Library/Ruby/Gems/1.8/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/typography/links/_link-colors.scss */
+.navbtn-categoryChild:active {
+  color: white;
+}
+/* line 186, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.navbtn-categoryChild:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  margin-top: -3px;
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -314px -198px;
+  width: 5px;
+  height: 6px;
+}
+/* line 195, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.navbtn-categoryChild:hover {
+  background-color: #002e55;
+  background-image: url('/shared13/images/common/navigation/dotline_default_top_hover.gif'), url('/shared13/images/common/navigation/dotline_default_bottom_hover.gif');
+}
+
+/* line 218, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.breadcrumbs {
+  width: 976px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+/* line 222, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.breadcrumbs ul {
+  padding: 0px 0px 0px 27px;
+  margin: 0px;
+}
+/* line 227, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.breadcrumbs li {
+  float: left;
+  font-size: 92.30769%;
+  line-height: 2;
+  position: relative;
+  list-style: none;
+  padding: 0px 20px 0px 0px;
+  margin-right: 16px;
+}
+/* line 235, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.breadcrumbs li a {
+  display: block;
+}
+/* line 238, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.breadcrumbs li span {
+  color: #004b89;
+}
+/* line 241, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.breadcrumbs li::after {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3px 0 3px 5px;
+  border-color: transparent transparent transparent #002e55;
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -2px;
+}
+/* line 249, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_bars.scss */
+.breadcrumbs li.current::after {
+  content: '';
+  border-color: transparent;
+}
+
+/* line 20, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  -webkit-tap-highlight-color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  position: relative;
+}
+/* line 29, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+/* line 36, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon span.shadow {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: 0px -97px;
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  z-index: 1;
+}
+
+/* line 58, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-mother_girl {
+  width: 64px;
+  height: 64px;
+}
+/* line 60, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-mother_girl > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -262px -132px;
+  width: 64px;
+  height: 64px;
+}
+
+/* line 64, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-father_mother {
+  width: 64px;
+  height: 64px;
+}
+/* line 66, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-father_mother > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -66px -171px;
+  width: 64px;
+  height: 64px;
+}
+
+/* line 70, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-boy,
+.icon-kids {
+  width: 64px;
+  height: 64px;
+}
+/* line 73, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-boy > span,
+.icon-kids > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -196px 0px;
+  width: 64px;
+  height: 64px;
+}
+
+/* line 77, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-girl {
+  width: 64px;
+  height: 64px;
+}
+/* line 79, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-girl > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -132px -171px;
+  width: 64px;
+  height: 64px;
+}
+
+/* line 111, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-word,
+.icon-zip,
+.icon-pdf,
+.icon-excel {
+  width: 48px;
+  height: 48px;
+}
+
+/* line 119, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-word > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -100px -403px;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 125, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-zip > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -250px -303px;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 131, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-pdf > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -200px -353px;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 137, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.icon-excel > span {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -328px -200px;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 143, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+a:hover .icon-word > span {
+  background-position: -150px -403px;
+}
+/* line 147, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+a:hover .icon-zip > span {
+  background-position: -200px -303px;
+}
+/* line 151, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+a:hover .icon-pdf > span {
+  background-position: -250px -353px;
+}
+/* line 155, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+a:hover .icon-excel > span {
+  background-position: -328px -250px;
+}
+
+/* line 163, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 .icon-word > span {
+  background-position: -428px 0px;
+}
+/* line 164, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 .icon-zip > span {
+  background-position: -200px -403px;
+}
+/* line 165, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 .icon-pdf > span {
+  background-position: -378px -50px;
+}
+/* line 166, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 .icon-excel > span {
+  background-position: -300px -303px;
+}
+/* line 168, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 a:hover .icon-word > span {
+  background-position: -428px -50px;
+}
+/* line 169, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 a:hover .icon-zip > span {
+  background-position: -250px -403px;
+}
+/* line 170, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 a:hover .icon-pdf > span {
+  background-position: -378px -100px;
+}
+/* line 171, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-1 a:hover .icon-excel > span {
+  background-position: -300px -353px;
+}
+
+/* line 163, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 .icon-word > span {
+  background-position: -428px -100px;
+}
+/* line 164, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 .icon-zip > span {
+  background-position: -300px -403px;
+}
+/* line 165, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 .icon-pdf > span {
+  background-position: -140px -97px;
+}
+/* line 166, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 .icon-excel > span {
+  background-position: -350px -353px;
+}
+/* line 168, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 a:hover .icon-word > span {
+  background-position: -428px -150px;
+}
+/* line 169, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 a:hover .icon-zip > span {
+  background-position: -350px -403px;
+}
+/* line 170, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 a:hover .icon-pdf > span {
+  background-position: -378px -200px;
+}
+/* line 171, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-2 a:hover .icon-excel > span {
+  background-position: -198px -171px;
+}
+
+/* line 163, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 .icon-word > span {
+  background-position: -428px -200px;
+}
+/* line 164, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 .icon-zip > span {
+  background-position: -400px -403px;
+}
+/* line 165, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 .icon-pdf > span {
+  background-position: -378px -250px;
+}
+/* line 166, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 .icon-excel > span {
+  background-position: -198px -237px;
+}
+/* line 168, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 a:hover .icon-word > span {
+  background-position: -428px -250px;
+}
+/* line 169, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 a:hover .icon-zip > span {
+  background-position: -378px -150px;
+}
+/* line 170, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 a:hover .icon-pdf > span {
+  background-position: -378px -300px;
+}
+/* line 171, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-3 a:hover .icon-excel > span {
+  background-position: -248px -237px;
+}
+
+/* line 163, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 .icon-word > span {
+  background-position: -428px -300px;
+}
+/* line 164, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 .icon-zip > span {
+  background-position: -50px -303px;
+}
+/* line 165, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 .icon-pdf > span {
+  background-position: 0px -353px;
+}
+/* line 166, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 .icon-excel > span {
+  background-position: -328px 0px;
+}
+/* line 168, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 a:hover .icon-word > span {
+  background-position: -428px -350px;
+}
+/* line 169, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 a:hover .icon-zip > span {
+  background-position: 0px -303px;
+}
+/* line 170, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 a:hover .icon-pdf > span {
+  background-position: -50px -353px;
+}
+/* line 171, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-4 a:hover .icon-excel > span {
+  background-position: -328px -50px;
+}
+
+/* line 163, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 .icon-word > span {
+  background-position: 0px -403px;
+}
+/* line 164, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 .icon-zip > span {
+  background-position: -150px -303px;
+}
+/* line 165, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 .icon-pdf > span {
+  background-position: -100px -353px;
+}
+/* line 166, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 .icon-excel > span {
+  background-position: -328px -100px;
+}
+/* line 168, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 a:hover .icon-word > span {
+  background-position: -50px -403px;
+}
+/* line 169, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 a:hover .icon-zip > span {
+  background-position: -100px -303px;
+}
+/* line 170, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 a:hover .icon-pdf > span {
+  background-position: -150px -353px;
+}
+/* line 171, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_icons.scss */
+.c-5 a:hover .icon-excel > span {
+  background-position: -328px -150px;
+}
+
+/* line 25, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper, .wrapper-mainImage, .wrapper-article, .wrapper-line, .wrapper-withImage, .wrapper-withImage-top, .wrapper-withImage-left {
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  background-color: #f0f0f0;
+  border: 1px solid #e4e4e4;
+  margin-bottom: 16px;
+  padding: 7px;
+}
+/* line 31, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper .text, .wrapper-mainImage .text, .wrapper-article .text, .wrapper-line .text, .wrapper-withImage .text, .wrapper-withImage-top .text, .wrapper-withImage-left .text {
+  font-size: 92.30769%;
+  line-height: 2;
+  margin: 0;
+  margin-top: -6px;
+  padding: 0 8px;
+}
+/* line 38, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper .grid-9, .wrapper-mainImage .grid-9, .wrapper-article .grid-9, .wrapper-line .grid-9, .wrapper-withImage .grid-9, .wrapper-withImage-top .grid-9, .wrapper-withImage-left .grid-9 {
+  width: 703px;
+}
+/* line 41, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper .grid-3, .wrapper-mainImage .grid-3, .wrapper-article .grid-3, .wrapper-line .grid-3, .wrapper-withImage .grid-3, .wrapper-withImage-top .grid-3, .wrapper-withImage-left .grid-3 {
+  width: 223px;
+}
+
+/* line 50, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-article {
+  padding-bottom: 15px;
+}
+
+/* line 55, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-line {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #ecf5fb;
+  padding: 7px;
+}
+
+/* line 63, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage, .wrapper-withImage-top, .wrapper-withImage-left {
+  background-color: #ecf5fb;
+  padding: 0;
+}
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage > a, .wrapper-withImage-top > a, .wrapper-withImage-left > a {
+  display: block;
+}
+/* line 72, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage a:hover *, .wrapper-withImage-top a:hover *, .wrapper-withImage-left a:hover * {
+  text-decoration: underline;
+}
+/* line 75, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage .image, .wrapper-withImage-top .image, .wrapper-withImage-left .image {
+  margin: -1px 0px 0px -1px;
+}
+/* line 77, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage .image img, .wrapper-withImage-top .image img, .wrapper-withImage-left .image img {
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  display: block;
+}
+/* line 82, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage .column, .wrapper-withImage-top .column, .wrapper-withImage-left .column {
+  margin-left: 0px;
+}
+/* line 84, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage .column .text, .wrapper-withImage-top .column .text, .wrapper-withImage-left .column .text {
+  padding: 0px 7px;
+}
+
+/* line 90, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage-top {
+  padding-bottom: 13px;
+}
+/* line 93, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage-top .text {
+  margin-top: 10px;
+}
+
+/* line 100, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage-left .image {
+  float: left;
+  width: 224px;
+}
+/* line 104, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage-left .column {
+  float: right;
+  width: 224px;
+  padding-top: 25px;
+}
+/* line 108, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-withImage-left .column .text {
+  margin-top: 5px;
+  padding: 0 7px 0 0;
+}
+
+/* line 115, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.wrapper-banner {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 107.69231%;
+  line-height: 1.71429;
+  color: white;
+  padding: 16px 0;
+  text-align: center;
+  margin: 16px 0;
+  background-color: #002e55;
+}
+
+/* ==============
+    Header
+   ============== */
+/* line 129, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+header.pageHeader {
+  color: #004b89;
+  padding-left: 9px;
+}
+/* line 132, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+header.pageHeader h1 {
+  font-size: 184.61538%;
+  line-height: 1.33333;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  padding: 12px 0;
+}
+
+/* line 141, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.sectionHeader {
+  color: #0060b0;
+}
+/* line 143, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.sectionHeader h1, .sectionHeader h2, .sectionHeader h3 {
+  font-size: 153.84615%;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 0 12px 9px;
+  font-weight: normal;
+}
+
+/* line 152, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.header-article {
+  color: #0060b0;
+  border-bottom: 1px solid white;
+}
+/* line 155, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.header-article h2 {
+  font-size: 123.07692%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 3px 0 9px 9px;
+  font-weight: normal;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+/* line 165, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.columHeader {
+  color: #0060b0;
+}
+/* line 167, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.columHeader h1, .columHeader h2, .columHeader h3 {
+  font-size: 123.07692%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0px;
+  font-weight: normal;
+}
+
+/* ==============
+    Module divide for X
+   ============== */
+/* line 179, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divideBy, .divider-1, .divider-2, .divider-3, .divider-4 {
+  margin-top: 15px;
+}
+/* line 182, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divideBy .column:first-child, .divider-1 .column:first-child, .divider-2 .column:first-child, .divider-3 .column:first-child, .divider-4 .column:first-child {
+  margin-left: 0px;
+}
+
+/* line 186, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.column {
+  float: left;
+  margin-left: 8px;
+}
+
+/* line 192, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divider-1 .column {
+  width: 100%;
+  margin-left: 0px;
+}
+
+/* line 200, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divider-2 .column {
+  width: 340px;
+}
+/* line 203, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divider-2 .wrapper-banner {
+  float: left;
+  width: 344px;
+  margin-left: 16px;
+}
+/* line 207, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divider-2 .wrapper-banner:first-child {
+  margin-left: 0px;
+}
+
+/* line 215, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divider-3 .column {
+  width: 224px;
+}
+
+/* line 222, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_boxes.scss */
+.divider-4 .column {
+  width: 166px;
+}
+
+/* line 22, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_misc.scss */
+.news a.news-line {
+  float: left;
+  width: 696px;
+  display: block;
+  text-decoration: underline;
+}
+/* line 27, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_misc.scss */
+.news a.news-line dl {
+  font-size: 92.30769%;
+  line-height: 2;
+  margin: 0px;
+}
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_misc.scss */
+.news a.news-line dl dt {
+  float: left;
+  width: 130px;
+  margin-right: 24px;
+  text-indent: 7px;
+  text-decoration: underline;
+}
+/* line 39, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_misc.scss */
+.news a.news-line dl dd {
+  float: left;
+  margin: 0px;
+  width: 536px;
+  text-decoration: underline;
+}
+/* line 47, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_misc.scss */
+.news a.btn {
+  float: right;
+}
+
+/* line 28, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 {
+  /*=========================================================
+  =            category Navigation -> _bars.scss            =
+  =========================================================*/
+  /*-----  End of category Navigation -> _bars.scss  ------*/
+  /*===============================================
+  =            Button -> _buttons.scss            =
+  ===============================================*/
+  /*-----  End of Button -> _buttons.scss  ------*/
+}
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .navbtn-categoryParent {
+  background-color: #00893e;
+}
+/* line 34, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .navbtn-categoryParent:hover {
+  background-color: #003719;
+}
+/* line 37, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .navbtn-categoryParent.current {
+  cursor: default;
+  background-color: #003719;
+}
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .navbtn-categoryChild {
+  background-color: #00b050;
+  background-image: url('/shared13/images/common/navigation/dotline_c1_top.gif'), url('/shared13/images/common/navigation/dotline_c1_bottom.gif');
+}
+/* line 46, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .navbtn-categoryChild:hover {
+  background-color: #005527;
+  background-image: url('/shared13/images/common/navigation/dotline_c1_top_hover.gif'), url('/shared13/images/common/navigation/dotline_c1_bottom_hover.gif');
+}
+/* line 50, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .navbtn-categoryChild.current {
+  cursor: default;
+  background-color: #005527;
+}
+/* line 61, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .btn {
+  background-color: #00b050;
+}
+/* line 63, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .btn:hover {
+  background-color: #005527;
+}
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 .btn-withArrow:after {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -196px -132px;
+  width: 16px;
+  height: 16px;
+}
+/* line 75, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-1 h1, .c-1 h2, .c-1 h3 {
+  color: #00893e;
+}
+
+/* line 28, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 {
+  /*=========================================================
+  =            category Navigation -> _bars.scss            =
+  =========================================================*/
+  /*-----  End of category Navigation -> _bars.scss  ------*/
+  /*===============================================
+  =            Button -> _buttons.scss            =
+  ===============================================*/
+  /*-----  End of Button -> _buttons.scss  ------*/
+}
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .navbtn-categoryParent {
+  background-color: #b01500;
+}
+/* line 34, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .navbtn-categoryParent:hover {
+  background-color: #370700;
+}
+/* line 37, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .navbtn-categoryParent.current {
+  cursor: default;
+  background-color: #370700;
+}
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .navbtn-categoryChild {
+  background-color: #b01500;
+  background-image: url('/shared13/images/common/navigation/dotline_c2_top.gif'), url('/shared13/images/common/navigation/dotline_c2_bottom.gif');
+}
+/* line 46, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .navbtn-categoryChild:hover {
+  background-color: #891000;
+  background-image: url('/shared13/images/common/navigation/dotline_c2_top_hover.gif'), url('/shared13/images/common/navigation/dotline_c2_bottom_hover.gif');
+}
+/* line 50, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .navbtn-categoryChild.current {
+  cursor: default;
+  background-color: #891000;
+}
+/* line 61, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .btn {
+  background-color: #b01500;
+}
+/* line 63, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .btn:hover {
+  background-color: #891000;
+}
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 .btn-withArrow:after {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -196px -132px;
+  width: 16px;
+  height: 16px;
+}
+/* line 75, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-2 h1, .c-2 h2, .c-2 h3 {
+  color: #b01500;
+}
+
+/* line 28, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 {
+  /*=========================================================
+  =            category Navigation -> _bars.scss            =
+  =========================================================*/
+  /*-----  End of category Navigation -> _bars.scss  ------*/
+  /*===============================================
+  =            Button -> _buttons.scss            =
+  ===============================================*/
+  /*-----  End of Button -> _buttons.scss  ------*/
+}
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .navbtn-categoryParent {
+  background-color: #897600;
+}
+/* line 34, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .navbtn-categoryParent:hover {
+  background-color: #373000;
+}
+/* line 37, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .navbtn-categoryParent.current {
+  cursor: default;
+  background-color: #373000;
+}
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .navbtn-categoryChild {
+  background-color: #b09900;
+  background-image: url('/shared13/images/common/navigation/dotline_c3_top.gif'), url('/shared13/images/common/navigation/dotline_c3_bottom.gif');
+}
+/* line 46, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .navbtn-categoryChild:hover {
+  background-color: #554a00;
+  background-image: url('/shared13/images/common/navigation/dotline_c3_top_hover.gif'), url('/shared13/images/common/navigation/dotline_c3_bottom_hover.gif');
+}
+/* line 50, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .navbtn-categoryChild.current {
+  cursor: default;
+  background-color: #554a00;
+}
+/* line 61, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .btn {
+  background-color: #b09900;
+}
+/* line 63, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .btn:hover {
+  background-color: #554a00;
+}
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 .btn-withArrow:after {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -196px -132px;
+  width: 16px;
+  height: 16px;
+}
+/* line 75, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-3 h1, .c-3 h2, .c-3 h3 {
+  color: #897600;
+}
+
+/* line 28, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 {
+  /*=========================================================
+  =            category Navigation -> _bars.scss            =
+  =========================================================*/
+  /*-----  End of category Navigation -> _bars.scss  ------*/
+  /*===============================================
+  =            Button -> _buttons.scss            =
+  ===============================================*/
+  /*-----  End of Button -> _buttons.scss  ------*/
+}
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .navbtn-categoryParent {
+  background-color: #893e00;
+}
+/* line 34, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .navbtn-categoryParent:hover {
+  background-color: #371900;
+}
+/* line 37, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .navbtn-categoryParent.current {
+  cursor: default;
+  background-color: #371900;
+}
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .navbtn-categoryChild {
+  background-color: #b05000;
+  background-image: url('/shared13/images/common/navigation/dotline_c4_top.gif'), url('/shared13/images/common/navigation/dotline_c4_bottom.gif');
+}
+/* line 46, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .navbtn-categoryChild:hover {
+  background-color: #552700;
+  background-image: url('/shared13/images/common/navigation/dotline_c4_top_hover.gif'), url('/shared13/images/common/navigation/dotline_c4_bottom_hover.gif');
+}
+/* line 50, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .navbtn-categoryChild.current {
+  cursor: default;
+  background-color: #552700;
+}
+/* line 61, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .btn {
+  background-color: #b05000;
+}
+/* line 63, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .btn:hover {
+  background-color: #552700;
+}
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 .btn-withArrow:after {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -196px -132px;
+  width: 16px;
+  height: 16px;
+}
+/* line 75, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-4 h1, .c-4 h2, .c-4 h3 {
+  color: #893e00;
+}
+
+/* line 28, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 {
+  /*=========================================================
+  =            category Navigation -> _bars.scss            =
+  =========================================================*/
+  /*-----  End of category Navigation -> _bars.scss  ------*/
+  /*===============================================
+  =            Button -> _buttons.scss            =
+  ===============================================*/
+  /*-----  End of Button -> _buttons.scss  ------*/
+}
+/* line 32, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .navbtn-categoryParent {
+  background-color: #890074;
+}
+/* line 34, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .navbtn-categoryParent:hover {
+  background-color: #37002e;
+}
+/* line 37, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .navbtn-categoryParent.current {
+  cursor: default;
+  background-color: #37002e;
+}
+/* line 43, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .navbtn-categoryChild {
+  background-color: #b00094;
+  background-image: url('/shared13/images/common/navigation/dotline_c5_top.gif'), url('/shared13/images/common/navigation/dotline_c5_bottom.gif');
+}
+/* line 46, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .navbtn-categoryChild:hover {
+  background-color: #550047;
+  background-image: url('/shared13/images/common/navigation/dotline_c5_top_hover.gif'), url('/shared13/images/common/navigation/dotline_c5_bottom_hover.gif');
+}
+/* line 50, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .navbtn-categoryChild.current {
+  cursor: default;
+  background-color: #550047;
+}
+/* line 61, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .btn {
+  background-color: #b00094;
+}
+/* line 63, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .btn:hover {
+  background-color: #550047;
+}
+/* line 68, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 .btn-withArrow:after {
+  background-image: url(/shared13/images/spritesheet.png);
+  background-position: -196px -132px;
+  width: 16px;
+  height: 16px;
+}
+/* line 75, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/modules/_colors.scss */
+.c-5 h1, .c-5 h2, .c-5 h3 {
+  color: #890074;
+}
+
+/* ==============
+    Grid
+   ============== */
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-1 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 64px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-2 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 144px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-3 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 224px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-4 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 304px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-5 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 384px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-6 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 464px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-7 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 544px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-8 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 624px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-9 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 704px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-10 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 784px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-11 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 864px;
+}
+
+/* line 14, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-12 {
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: 16px;
+  width: 944px;
+}
+
+/* line 19, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.grid-inner-first {
+  margin-left: 0px;
+}
+
+/* ==============
+    Module Arrow Box
+   ============== */
+/* line 26, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.arrowbox_left_element-with-icon {
+  margin: 16px 0 0;
+}
+/* line 29, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.arrowbox_left_element-with-icon dt {
+  float: left;
+  width: 64px;
+}
+/* line 33, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.arrowbox_left_element-with-icon dd {
+  float: left;
+  margin: 0;
+  width: 624px;
+}
+/* line 37, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.arrowbox_left_element-with-icon dd p {
+  font-size: 92.30769%;
+  line-height: 2;
+  margin: 0;
+}
+/* line 41, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.arrowbox_left_element-with-icon dd p em {
+  display: block;
+  padding-top: 8px;
+  font-style: normal;
+}
+
+/* line 50, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  position: relative;
+  background: white;
+  border: 2px solid #554a00;
+}
+
+/* line 56, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox:after, .arrowbox:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 67, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: white;
+}
+
+/* line 71, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox:before {
+  border-color: rgba(85, 74, 0, 0);
+  border-right-color: #554a00;
+}
+
+/* line 77, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox_left_element-with-icon .arrowbox {
+  margin: 0 0 0 16px;
+  padding: 8px 14px;
+}
+/* line 81, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox_left_element-with-icon .arrowbox:after, .arrowbox_left_element-with-icon .arrowbox:before {
+  right: 100%;
+  top: 28px;
+}
+/* line 85, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox_left_element-with-icon .arrowbox:after {
+  border-width: 3px 10px 3px 0;
+  margin-top: -3px;
+}
+/* line 89, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.arrowbox_left_element-with-icon .arrowbox:before {
+  border-width: 5px 16px 5px 0;
+  margin-top: -5px;
+}
+
+/*=================================
+=            TEXT LINK            =
+=================================*/
+/* line 100, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+a.textlink, a.textlink-withIcon {
+  display: block;
+  position: relative;
+  height: 48px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+/* line 106, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+a.textlink:hover, a.textlink-withIcon:hover {
+  color: #897600;
+}
+/* line 109, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+a.textlink i, a.textlink-withIcon i {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 114, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+a.textlink span.lable, a.textlink-withIcon span.lable {
+  height: 48px;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 118, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+a.textlink span.lable span.link, a.textlink-withIcon span.lable span.link {
+  font-size: 107.69231%;
+  line-height: 1.71429;
+  padding-left: 56px;
+  text-decoration: underline;
+}
+/* line 124, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+a.textlink span.lable span.caption, a.textlink-withIcon span.lable span.caption {
+  font-size: 92.30769%;
+  display: block;
+  padding-left: 56px;
+}
+/* line 132, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+a.textlink:hover span.lable span.caption, a.textlink-withIcon:hover span.lable span.caption {
+  color: black;
+}
+
+/*-----  End of TEXT LINK  ------*/
+/* ==============
+    Common Element Style
+   ============== */
+/* line 150, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+.roundImage {
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+}
+
+/* line 154, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.element-withCaption,
+dl.element-with-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+/* line 160, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.element-withCaption dt img,
+dl.element-with-icon dt img {
+  display: block;
+}
+
+/* line 167, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.element-withCaption dd {
+  font-size: 92.30769%;
+  line-height: 2;
+  margin: 0 7px;
+}
+
+/* line 175, /Users/pony/proj/local/jaxa-edu/htdocs_src/shared/scss/main.scss */
+dl.element-with-icon dd {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+/*# sourceMappingURL=main.css.map */
