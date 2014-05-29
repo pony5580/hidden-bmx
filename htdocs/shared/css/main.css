@@ -666,7 +666,7 @@ tt {
    ========================================================================== */
 /* line 3, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 html, body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif;
+  font-family: "Oswald", "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif;
 }
 
 /* line 7, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
@@ -677,7 +677,7 @@ html {
 
 /* line 12, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 body {
-  background: url('/shared/images/common/bg.gif') repeat-x top white;
+  background-color: #F8F8F8;
 }
 
 /* line 16, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
@@ -731,10 +731,14 @@ input:-webkit-autofill {
    ============== */
 /* line 44, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #header-global {
+  width: 100%;
+  position: fixed;
   background-color: #FFF;
   margin-bottom: 0px;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-/* line 47, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 51, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #header-global #logo {
   float: left;
   width: 25%;
@@ -742,61 +746,80 @@ input:-webkit-autofill {
   padding: 12px;
   display: block;
   background-color: #000;
-  border-bottom: 1px solid #000;
 }
 
-/* line 58, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 62, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 60, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 64, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global .navbar-nav {
   width: 55%;
   border: none;
-  border-bottom: 1px solid #eaeaea;
 }
-/* line 64, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 68, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global .navbar-nav li {
   position: relative;
   width: 25%;
 }
-/* line 67, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 71, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global .navbar-nav li a {
   padding: 0px;
   display: block;
-  font-family: "helvetica",sans-serif;
+  font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
   height: 54px;
   line-height: 54px;
   border-right: 1px solid #eaeaea;
   text-align: center;
 }
 
+/* line 84, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+.bs-docs-header {
+  padding-top: 54px;
+}
+
 /* ==============
     Contents
    ============== */
-/* line 83, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 91, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .contents {
   width: 976px;
   margin: 24px auto 0;
 }
 
-/* line 89, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
-#subContent {
-  float: left;
-  margin-right: 0px;
-  padding: 0px;
-  margin-left: 16px;
-  width: 224px;
+/* line 97, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+.container {
+  margin: 16px auto 40px auto;
 }
-
-/* line 93, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
-#mainContent {
+/* line 99, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+.container .news-list {
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background: #FFF;
+}
+/* line 104, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+.container .news-col {
+  padding: 20px;
+  border-bottom: 1px solid #E6E6E6;
+}
+/* line 107, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+.container .news-col a {
+  overflow: hidden;
+  *zoom: 1;
+  display: block;
+}
+/* line 111, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+.container .news-col img {
   float: left;
-  margin-right: 0px;
-  padding: 0px;
-  margin-left: 16px;
-  width: 704px;
+  margin: 0 20px 0 0;
+  height: 152px;
+  overflow: hidden;
+}
+/* line 117, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+.container .news-col h1 {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* ==============
