@@ -47,10 +47,11 @@ input:-webkit-autofill {
     background-color: #FFF;
     margin-bottom: 0px;
     z-index: 1000;
+    background-color: #000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     #logo {
-        @include float(left);
-        width: 25%;
+        // @include float(left);
+        width: 0 auto;
         text-align: center;
         padding: 12px;
         display:block;
@@ -82,7 +83,7 @@ input:-webkit-autofill {
 }
 
 .bs-docs-header {
-    padding-top: 54px;
+    padding-top: 80px;
 }
 
 /* ==============
@@ -104,6 +105,10 @@ input:-webkit-autofill {
     .news-col {
         padding: 20px;
         border-bottom: 1px solid #E6E6E6;
+        .news-col-date {
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
         a {
             @include clearfix;
             display: block;
@@ -121,11 +126,356 @@ input:-webkit-autofill {
     }
 }
 
+.ad-wrp {
+    border: 1px solid #e5e5e5;
+    background-color: #FFF;
+    padding: 10px;
+    margin-bottom: 8px;
+    img {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------ Team Section Starts */
+
+.team_ova {
+    background: url(../images/common/light-grey-noise.gif);
+    .section-heading {
+        h2 {
+            font-family: 'Jura', sans-serif;
+        }
+    }
+}
+.team_ova .line {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    margin-bottom: 60px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team_ova .team-contents {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.team_ova .picture {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.team_ova .picture img {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.team_ova .heading {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.team_ova .designation {
+    font-size: 14px;
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 3px;
+}
+.team_ova .smallline {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    width: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team-contents .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    color: #FFF;
+    top: -60px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: normal;
+    margin-bottom: -60px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.team_ova .description {
+    margin-bottom: 30px;
+}
+.team_ova .team-social a {
+    margin-bottom: 100px;
+    text-align: center;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: #000;
+}
+.team_ova .team-social a i {
+}
+/* Team Overlayzoom Starts */
+.teamoverlayzoom {
+    position: relative;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+}
+.teamoverlayzoom span i {
+    color: #FFF;
+}
+.teamoverlayzoom span.zoom {
+    position: absolute;
+    nowhitespace: afterproperty;
+    nowhitespace: afterproperty;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center; 
+    background: rgb(0, 0, 0); /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.9);
+    
+}
+.teamoverlayzoom span.zoom span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.teamoverlayzoom:hover span.zoom, .teamoverlayzoom:focus span.zoom {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0); /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* ------------------------------------------------------------------------------------------ Quotes Section Starts */
+
+.ova_contact {
+    padding: 40px 0px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    .container {
+        padding: 0px;
+    }
+    h2 {
+        font-family: 'Jura', sans-serif;
+    }
+}
+
+.ova-social-media {
+    padding: 40px 0px;
+    color: #fff;
+    background-color: #061519;
+    .container {
+        padding: 0px;
+    }
+    h2 {
+        color: #FFF;
+        font-family: 'Jura', sans-serif;
+    }
+}
+.ova-social-media {
+    background-attachment: fixed;
+    /*background-image: url(../img/parallax/4.jpg);*/
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+}
+.ova-social-media 
+.ova-social-media .line {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+    margin-bottom: 30px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ova-social-media .row {
+    text-align: center;
+}
+.ova-social-media .desc {
+    font-size: 22px;
+    font-weight: 300;
+}
+.ova-social-media ul {
+    padding: 0px;
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+.ova-social-media ul li {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 25px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    /*border: 3px solid #000;*/
+    font-size: 24px;
+    line-height: 50px;
+    color: #000;
+    margin-left: 4px;
+    margin-right: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.ova-social-media ul li a{
+    color: #000;
+}
+.ova-social-media ul li:hover {
+    opacity: .50;
+    filter: alpha(opacity=50);
+}
+
+/* ------------------------------------------------------------------------------------------ Footer Section Starts */
+section.ova_footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ova_footer {
+    background: url(../images/common/light-grey-noise.gif);
+}
+.ova_footer .row {
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    font-size: 10px;
+}
+.ova_footer .line {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e5e5e5;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ova_footer .desc {
+    font-size: 18px;
+    font-weight: 300;
+}
+.ova_footer .desc i {
+    margin-bottom: 12px;
+}
+
+.ova_footer .fa-chevron-up{
+    font-size: 18px;
+}
+/*-------------------------------------
+
 /* ==============
     Global Footer
    ============== */
-#globalFooter{
-}
 
 footer.global-footer {
 }
+
+
+
+
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.2
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+.owl-carousel{
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+    
+.owl-carousel .owl-item{
+    float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+    cursor: pointer;
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
