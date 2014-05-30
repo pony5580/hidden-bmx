@@ -20,8 +20,8 @@
   <link rel="stylesheet" id="color-css" href="http://wp.gawibowo.com/headline-news/?css=1&amp;ver=3.9.1" type="text/css" media="all">
   <link rel="stylesheet" id="sharedaddy-css" href="http://wp.gawibowo.com/headline-news/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=2.9.3" type="text/css" media="all">
   <link rel="stylesheet" id="sharedaddy-css" href="shared/css/test.css" type="text/css" media="all">
-  <script type="text/javascript" src="http://wp.gawibowo.com/headline-news/wp-includes/js/jquery/jquery.js?ver=1.11.0"></script>
-  <script type="text/javascript" src="http://wp.gawibowo.com/headline-news/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wp.gawibowo.com/headline-news/xmlrpc.php?rsd">
   <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wp.gawibowo.com/headline-news/wp-includes/wlwmanifest.xml">
   <link rel="prev" title="Sample Page" href="http://wp.gawibowo.com/headline-news/sample-page/">
@@ -56,9 +56,24 @@
               <a href="">NEWS</a>
             </li>
             <li id="menu-item-3" class="menu-item">
-              <a href="">FEATURE</a>
+              <a href="">VIDEO</a>
             </li>
             <li id="menu-item-4" class="menu-item">
+              <a href="">INTERVIEW</a>
+            </li>
+            <li id="menu-item-5" class="menu-item">
+              <a href="">TOP5</a>
+            </li>
+            <li id="menu-item-6" class="menu-item">
+              <a href="">LOCAL CREW</a>
+            </li>
+            <li id="menu-item-7" class="menu-item">
+              <a href="">UP COMER</a>
+            </li>
+            <li id="menu-item-8" class="menu-item">
+              <a href="">BRAND STORY</a>
+            </li>
+            <li id="menu-item-9" class="menu-item">
               <a href="">MAGAZINE</a>
             </li>
           </ul>
@@ -952,6 +967,16 @@
                 <img class="banner" src="/shared/images/demo/ads-250.png" alt="banner"></a>
             </div>
 
+             <div id="g7_ads300-2" class="widget widget_g7_ads300">
+              <a href="">
+                <img class="banner" src="/shared/images/demo/ads-250.png" alt="banner"></a>
+            </div>
+
+             <div id="g7_ads300-2" class="widget widget_g7_ads300">
+              <a href="">
+                <img class="banner" src="/shared/images/demo/ads-250.png" alt="banner"></a>
+            </div>
+
             <div id="g7_instagram" class="widget widget_g7_Instagram">
               <h2 class="widgettitle">
                 <span>Instagram</span>
@@ -990,15 +1015,17 @@
   <!-- WP Super Cache is installed but broken. The constant WPCACHEHOME must be set in the file wp-config.php and point at the WP Super Cache plugin directory. -->
 
   <script type="text/javascript">
-
-
-  // $('#g7_instagram .widgebody').spectragram('getRecentTagged',{
-  //   accessToken: '254921076.71326b9.4eda75dfe61e4cf4ab8d038d6db0a330',
-  //   clientID: '71326b99faa84f88acc73fbe44f2c221',
-  //   query: 'hiddenchampion',
-  //   max:20,
-  //   size:'small'
-  // });
+  $.fn.spectragram.accessData = {
+    accessToken: '254921076.71326b9.4eda75dfe61e4cf4ab8d038d6db0a330',
+    clientID: '71326b99faa84f88acc73fbe44f2c221'
+};
+  $(function(){
+  $('#g7_instagram .widgebody').spectragram('getRecentTagged',{
+    query: 'hiddenchampion',
+    max:20,
+    size:'small'
+  });
+  });
   </script>
 </body>
 </html>
