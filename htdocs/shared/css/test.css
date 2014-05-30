@@ -465,7 +465,23 @@
   display: none;
 }
 
+.widgebody li {
+  list-style: none;
+  float: left;
+  margin: 2px 4px 2px 0;
+}
 
+.widgebody li a {
+  display:block;
+  width: 60px;
+height: 60px;
+background: #000;
+}
+
+.widgebody li img {
+width: 60px;
+height: 60px;
+}
 
 
 
