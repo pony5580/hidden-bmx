@@ -140,6 +140,10 @@ input:-webkit-autofill {
 
 .team_ova {
     background: url(../images/common/light-grey-noise.gif);
+    .container {
+        margin: 40px auto 0px;
+        padding: 40px 0px;
+    }
     .section-heading {
         h2 {
             font-family: 'Jura', sans-serif;
