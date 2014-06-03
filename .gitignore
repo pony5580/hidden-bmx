@@ -13,3 +13,5 @@ wp-content/backups/
 sitemap.xml.gz
 _files/
 node_modules
+htdocs/__CMS/
+htdocs/CMS/

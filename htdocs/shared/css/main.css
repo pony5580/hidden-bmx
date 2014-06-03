@@ -729,7 +729,7 @@ input:-webkit-autofill {
 /* ==============
     Grobal HEADER
    ============== */
-/* line 44, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 45, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #header-global {
   width: 100%;
   position: fixed;
@@ -739,7 +739,7 @@ input:-webkit-autofill {
   background-color: #000;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-/* line 52, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 53, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #header-global #logo {
   width: 0 auto;
   text-align: center;
@@ -748,22 +748,22 @@ input:-webkit-autofill {
   background-color: #000;
 }
 
-/* line 63, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 64, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 65, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 66, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global .navbar-nav {
   width: 55%;
   border: none;
 }
-/* line 69, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 70, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global .navbar-nav li {
   position: relative;
   width: 25%;
 }
-/* line 72, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 73, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #nav-global .navbar-nav li a {
   padding: 0px;
   display: block;
@@ -774,7 +774,7 @@ input:-webkit-autofill {
   text-align: center;
 }
 
-/* line 85, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 86, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .bs-docs-header {
   padding-top: 80px;
 }
@@ -782,79 +782,79 @@ input:-webkit-autofill {
 /* ==============
     Contents
    ============== */
-/* line 92, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 93, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .contents {
   width: 976px;
   margin: 24px auto 0;
 }
 
-/* line 98, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 99, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .container {
   margin: 16px auto 40px auto;
 }
-/* line 100, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 101, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .container .news-list {
   border-radius: 3px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   background: #FFF;
 }
-/* line 105, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 106, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .container .news-col {
   padding: 20px;
   border-bottom: 1px solid #E6E6E6;
 }
-/* line 108, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 109, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .container .news-col .news-col-date {
   font-size: 10px;
   letter-spacing: 2px;
 }
-/* line 112, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 113, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .container .news-col a {
   overflow: hidden;
   *zoom: 1;
   display: block;
 }
-/* line 116, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 117, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .container .news-col img {
   float: left;
   margin: 0 20px 0 0;
   height: 152px;
   overflow: hidden;
 }
-/* line 122, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 123, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .container .news-col h1 {
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 129, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 130, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ad-wrp {
   border: 1px solid #e5e5e5;
   background-color: #FFF;
   padding: 10px;
   margin-bottom: 8px;
 }
-/* line 134, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 135, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ad-wrp img {
   width: 100%;
 }
 
 /* ------------------------------------------------------------------------------------------ Team Section Starts */
-/* line 141, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 142, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova {
   background: url(../images/common/light-grey-noise.gif);
 }
-/* line 143, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 144, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .container {
   margin: 40px auto 0px;
   padding: 40px 0px;
 }
-/* line 148, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 149, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .section-heading h2 {
   font-family: 'Jura', sans-serif;
 }
 
-/* line 153, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 154, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .line {
   border-bottom-width: 3px;
   border-bottom-style: solid;
@@ -865,20 +865,20 @@ input:-webkit-autofill {
   margin-right: auto;
 }
 
-/* line 162, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 163, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .team-contents {
   text-align: center;
   margin-bottom: 30px;
   margin-top: 25px;
 }
 
-/* line 167, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 168, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .picture {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-/* line 171, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 172, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .picture img {
   width: 100%;
   height: auto;
@@ -890,14 +890,14 @@ input:-webkit-autofill {
   -moz-border-radius: 50%;
 }
 
-/* line 181, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 182, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .heading {
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-/* line 186, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 187, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .designation {
   font-size: 14px;
   font-family: 'Jura', sans-serif;
@@ -906,7 +906,7 @@ input:-webkit-autofill {
   line-height: 3px;
 }
 
-/* line 193, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 194, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .smallline {
   border-bottom-width: 2px;
   border-bottom-style: solid;
@@ -920,7 +920,7 @@ input:-webkit-autofill {
   margin-right: auto;
 }
 
-/* line 205, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 206, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team-contents .icon {
   width: 60px;
   height: 60px;
@@ -944,12 +944,12 @@ input:-webkit-autofill {
   transition: all 0.3s;
 }
 
-/* line 227, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 228, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .description {
   margin-bottom: 30px;
 }
 
-/* line 230, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 231, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .team_ova .team-social a {
   margin-bottom: 100px;
   text-align: center;
@@ -959,7 +959,7 @@ input:-webkit-autofill {
 }
 
 /* Team Overlayzoom Starts */
-/* line 240, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 241, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .teamoverlayzoom {
   position: relative;
   display: block;
@@ -967,12 +967,12 @@ input:-webkit-autofill {
   text-decoration: none;
 }
 
-/* line 246, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 247, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .teamoverlayzoom span i {
   color: #FFF;
 }
 
-/* line 249, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 250, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .teamoverlayzoom span.zoom {
   position: absolute;
   nowhitespace: afterproperty;
@@ -989,7 +989,7 @@ input:-webkit-autofill {
   background: rgba(0, 0, 0, 0.9);
 }
 
-/* line 264, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 265, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .teamoverlayzoom span.zoom span {
   position: absolute;
   left: 0;
@@ -999,7 +999,7 @@ input:-webkit-autofill {
   height: 100%;
 }
 
-/* line 272, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 273, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .teamoverlayzoom:hover span.zoom, .teamoverlayzoom:focus span.zoom {
   width: 100%;
   height: 100%;
@@ -1013,39 +1013,39 @@ input:-webkit-autofill {
 }
 
 /* ------------------------------------------------------------------------------------------ Quotes Section Starts */
-/* line 285, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 286, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_contact {
   padding: 40px 0px;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 290, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 291, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_contact .container {
   padding: 0px;
 }
-/* line 293, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 294, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_contact h2 {
   font-family: 'Jura', sans-serif;
 }
 
-/* line 298, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 299, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media {
   padding: 40px 0px;
   color: #fff;
   background-color: #061519;
 }
-/* line 302, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 303, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media .container {
   padding: 0px;
 }
-/* line 305, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 306, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media h2 {
   color: #FFF;
   font-family: 'Jura', sans-serif;
 }
 
-/* line 310, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 311, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media {
   background-attachment: fixed;
   /*background-image: url(../img/parallax/4.jpg);*/
@@ -1053,7 +1053,7 @@ input:-webkit-autofill {
   background-position: 50% 0;
 }
 
-/* line 316, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 317, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media
 .ova-social-media .line {
   border-bottom-width: 3px;
@@ -1065,18 +1065,18 @@ input:-webkit-autofill {
   margin-right: auto;
 }
 
-/* line 326, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 327, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media .row {
   text-align: center;
 }
 
-/* line 329, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 330, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media .desc {
   font-size: 22px;
   font-weight: 300;
 }
 
-/* line 333, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 334, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media ul {
   padding: 0px;
   margin-top: 40px;
@@ -1085,7 +1085,7 @@ input:-webkit-autofill {
   margin-left: 0px;
 }
 
-/* line 340, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 341, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media ul li {
   width: 50px;
   height: 50px;
@@ -1108,37 +1108,37 @@ input:-webkit-autofill {
   transition: all 0.3s;
 }
 
-/* line 361, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 362, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media ul li a {
   color: #000;
 }
 
-/* line 364, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 365, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova-social-media ul li:hover {
   opacity: .50;
   filter: alpha(opacity=50);
 }
 
 /* ------------------------------------------------------------------------------------------ Footer Section Starts */
-/* line 370, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 371, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 section.ova_footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 374, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 375, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_footer {
   background: url(../images/common/light-grey-noise.gif);
 }
 
-/* line 377, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 378, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_footer .row {
   text-align: center;
   font-family: 'Jura', sans-serif;
   font-size: 10px;
 }
 
-/* line 382, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 383, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_footer .line {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -1150,18 +1150,18 @@ section.ova_footer {
   margin-bottom: 30px;
 }
 
-/* line 392, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 393, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_footer .desc {
   font-size: 18px;
   font-weight: 300;
 }
 
-/* line 396, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 397, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_footer .desc i {
   margin-bottom: 12px;
 }
 
-/* line 400, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 401, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .ova_footer .fa-chevron-up {
   font-size: 18px;
 }
@@ -1176,7 +1176,7 @@ section.ova_footer {
  *  v1.3.2
  */
 /* clearfix */
-/* line 421, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 422, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-carousel .owl-wrapper:after {
   content: ".";
   display: block;
@@ -1187,7 +1187,7 @@ section.ova_footer {
 }
 
 /* display none until init */
-/* line 430, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 431, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-carousel {
   display: none;
   position: relative;
@@ -1195,21 +1195,21 @@ section.ova_footer {
   -ms-touch-action: pan-y;
 }
 
-/* line 436, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 437, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-carousel .owl-wrapper {
   display: none;
   position: relative;
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
 
-/* line 441, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 442, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-carousel .owl-wrapper-outer {
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 
-/* line 446, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 447, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 500ms ease-in-out;
   -moz-transition: height 500ms ease-in-out;
@@ -1218,18 +1218,18 @@ section.ova_footer {
   transition: height 500ms ease-in-out;
 }
 
-/* line 454, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 455, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-carousel .owl-item {
   float: left;
 }
 
-/* line 457, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 458, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div {
   cursor: pointer;
 }
 
-/* line 461, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 462, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-controls {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1240,13 +1240,13 @@ section.ova_footer {
 }
 
 /* mouse grab icon */
-/* line 471, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 472, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .grabbing {
   cursor: url(grabbing.png) 8 8, move;
 }
 
 /* fix */
-/* line 476, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 477, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
   -webkit-backface-visibility: hidden;
@@ -1261,24 +1261,24 @@ section.ova_footer {
 *   Owl Carousel Owl Demo Theme 
 *   v1.3.2
 */
-/* line 491, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 492, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls {
   margin-top: 12px;
   text-align: center;
 }
 
 /* Styling Next and Prev buttons */
-/* line 496, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 497, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls .owl-buttons .owl-prev {
   margin-top: 10px !important;
 }
 
-/* line 499, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 500, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls .owl-buttons .owl-next {
   margin-top: 10px !important;
 }
 
-/* line 502, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 503, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls .owl-buttons div {
   color: #000;
   display: inline-block;
@@ -1299,7 +1299,7 @@ section.ova_footer {
 
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-/* line 520, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 521, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover {
   filter: Alpha(Opacity=100);
   /*IE7 fix*/
@@ -1312,7 +1312,7 @@ section.ova_footer {
 }
 
 /* Styling Pagination*/
-/* line 531, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 532, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls .owl-page {
   display: inline-block;
   zoom: 1;
@@ -1320,7 +1320,7 @@ section.ova_footer {
   /*IE7 life-saver */
 }
 
-/* line 536, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 537, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls .owl-page span {
   display: block;
   width: 12px;
@@ -1339,7 +1339,7 @@ section.ova_footer {
   margin-left: 5px;
 }
 
-/* line 552, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 553, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
   filter: Alpha(Opacity=100);
   /*IE7 fix*/
@@ -1347,7 +1347,7 @@ section.ova_footer {
 }
 
 /* If PaginationNumbers is true */
-/* line 558, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 559, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-theme .owl-controls .owl-page span.owl-numbers {
   height: auto;
   width: auto;
@@ -1360,7 +1360,7 @@ section.ova_footer {
 }
 
 /* preloading images */
-/* line 569, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
+/* line 570, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 .owl-item.loading {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
