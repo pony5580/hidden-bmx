@@ -53,7 +53,6 @@
 }
 
 #page-header .header-top li a {
-  line-height: 50px;
   color: #fff;
 }
 
@@ -141,8 +140,8 @@
 
 #header-social-links {
   float: right;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
   margin-top: 13px;
   list-style: none; }
   #header-social-links li {
@@ -492,6 +491,11 @@
   display: none;
 }
 
+.widgebody {
+  overflow: hidden;
+  *zoom: 1;
+}
+
 .widgebody li {
   list-style: none;
   float: left;
@@ -557,3 +561,7 @@ footer.global-footer {
 }
 
 
+.flex-direction-nav,
+.flex-control-nav {
+  display: none;
+}

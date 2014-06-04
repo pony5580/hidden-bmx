@@ -384,6 +384,7 @@ require_once PARENT_DIR . '/includes/widgets/subpages.php';
 require_once PARENT_DIR . '/includes/widgets/contact.php';
 require_once PARENT_DIR . '/includes/widgets/contact-info.php';
 require_once PARENT_DIR . '/includes/widgets/twitter.php';
+require_once PARENT_DIR . '/includes/widgets/instagram.php';
 
 
 /**
@@ -487,6 +488,7 @@ if (!function_exists('g7_widgets_init')) {
 		register_widget('G7_Contact_Info_Widget');
 		register_widget('G7_Subpages_Widget');
 		register_widget('G7_Twitter_Widget');
+		register_widget('G7_Instagram_Widget');
 	}
 	add_action('widgets_init', 'g7_widgets_init');
 }

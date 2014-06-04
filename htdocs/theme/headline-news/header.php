@@ -7,48 +7,85 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<?php wp_head(); ?>
+	<link rel='stylesheet' id='over'  href='/shared/css/test.css' type='text/css' media='all' />
+	<script type="text/javascript" src="http://hidden-champion.net/shared/js/spectragram.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
 	<div id="wrapper">
-		<header class="top">
-			<div class="container">
-				<?php get_template_part('news-ticker'); ?>
-				<div class="row">
-					<div class="col-sm-6 col-sm-push-3 col-xs-12">
-						<?php echo g7_site_title(); ?>
-					</div>
-					<div class="col-sm-3 col-sm-pull-6 col-xs-6">
-						<?php if (get_theme_mod('header_time', 1)) : ?>
-							<div class="header-time">
-								<i class="fa fa-clock-o"></i>
-								<span><?php echo g7_current_time(get_theme_mod('header_time', 'h:i a')); ?></span>
-							</div>
-						<?php endif; ?>
-						<?php if (get_theme_mod('header_date', 1)) : ?>
-							<div class="header-date"><?php echo g7_current_time(get_theme_mod('header_date', 'd F Y')); ?></div>
-						<?php endif; ?>
-						<?php if (get_theme_mod('header_search', 1)) : ?>
-							<form class="header-search">
-								<i class="fa fa-search"></i>
-								<input type="text" name="s" placeholder="<?php _e('Search...', 'g7theme'); ?>">
-							</form>
-						<?php endif; ?>
-					</div>
-					<div class="col-sm-3 col-xs-6">
-						<?php if (get_theme_mod('top_menu', 1)) : ?>
-							<?php echo g7_menu('topmenu'); ?>
-						<?php endif; ?>
-					</div>
-				</div>
-			</div>
-		</header>
+		<header id="page-header" class="clearfix">
+      <div class="header-top">
+        <div class="container">
+        	<?php echo g7_menu('mainmenu'); ?>
 
-		<nav class="mainnav">
-			<div class="container">
-				<?php echo g7_menu('mainmenu'); ?>
-			</div>
-		</nav>
+         <!--  <ul id="menu-global">
+          	
+            <li id="menu-item-1" class="menu-item">
+              <a href="">TOP</a>
+            </li>
+            <li id="menu-item-2" class="menu-item">
+              <a href="">NEWS</a>
+            </li>
+            <li id="menu-item-3" class="menu-item">
+              <a href="">VIDEO</a>
+            </li>
+            <li id="menu-item-4" class="menu-item">
+              <a href="">INTERVIEW</a>
+            </li>
+            <li id="menu-item-5" class="menu-item">
+              <a href="">TOP5</a>
+            </li>
+            <li id="menu-item-6" class="menu-item">
+              <a href="">LOCAL CREW</a>
+            </li>
+            <li id="menu-item-7" class="menu-item">
+              <a href="">UP COMER</a>
+            </li>
+            <li id="menu-item-8" class="menu-item">
+              <a href="">BRAND STORY</a>
+            </li>
+            <li id="menu-item-9" class="menu-item">
+              <a href="">MAGAZINE</a>
+            </li>
+          </ul> -->
+
+          <ul id="header-social-links">
+            <li>
+              <a class="kopa-social-link" href="https://www.facebook.com/HIDDENBMXMAG" target="_blank" title="Facebook" rel="nofollow"> <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="kopa-social-link" href="https://twitter.com/HIDDEN_BMX" target="_blank" title="Twitter" rel="nofollow">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="kopa-social-link" href="http://youtube.com" target="_blank" title="Youtube" rel="nofollow">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a class="kopa-social-link" href="" target="_blank" title="RSS" rel="nofollow">
+                <i class="fa fa-rss"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-middle">
+        <div class="container">
+          <div id="logo-image" class="pull-left">
+            <a href="/"><img src="shared/images/common/logo.png" height="20" alt=""></a>
+          </div>
+
+          <div id="top-banner" class="banner-adv pull-right">
+            <a target="_blank" href="">
+              <img src="/shared/images/banner/Top-banner_sample.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </header>
 
 		<?php get_template_part('featured'); ?>
 
