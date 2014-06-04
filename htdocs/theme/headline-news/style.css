@@ -697,6 +697,10 @@ main > .container {
 .page header .entry-image {
 	margin-top: 20px;
 }
+.single .format-standard  header .entry-image {
+	display: none;
+}
+
 .single .entry-content,
 .page .entry-content {
 	font-family: 'Open Sans', sans-serif;

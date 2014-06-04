@@ -71,7 +71,7 @@ switch (get_post_format()) {
 
 			<?php if (get_theme_mod('single_featured_image', 1) && (has_post_thumbnail())) : ?>
 				<div class="entry-image">
-					<?php echo g7_image($image_w, $image_h, false); ?>
+					<?php echo g7_image($image_w, null, false); ?>
 				</div>
 			<?php endif; ?>
 
