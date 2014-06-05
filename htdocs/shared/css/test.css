@@ -573,3 +573,10 @@ footer.global-footer {
 .vcard {
   display: none;
 }
+
+.img-interview {
+  width: 300px;
+  float: left;
+  border: 5px solid #333;
+  margin: 0px 15px 15px 0px;
+}
