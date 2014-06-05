@@ -18,6 +18,9 @@ list($image_w, $image_h) = g7_image_sizes('small');
 					<h4 class="block-heading">
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h4>
+					<div class="block-meta">
+						<?php echo g7_date_meta(); ?>
+					</div>
 				</div>
 			</li>
 		<?php endwhile; ?>

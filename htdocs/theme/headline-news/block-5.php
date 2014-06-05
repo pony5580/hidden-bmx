@@ -16,21 +16,18 @@ list($image_w2, $image_h2) = g7_image_sizes('thumb');
 						<div class="post-format"><?php echo g7_post_format_icon(); ?></div>
 						<?php echo g7_post_rating('<div class="post-rating">', '</div>'); ?>
 					</div>
-					<h3 class="block-heading">
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					</h3>
-					<div class="block-meta">
-						<span class="block-category">
-							<?php the_category(', '); ?>
-						</span>
-						| <?php _e('by', 'g7theme'); ?> <?php echo g7_author_meta(); ?>
-					</div>
 					<?php if (has_post_thumbnail()) : ?>
 						<div class="block-top">
 							<?php echo g7_image($image_w, $image_h); ?>
 						</div>
 					<?php endif; ?>
-					<div class="block-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 15); ?></div>
+					<h3 class="block-heading">
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					</h3>
+					<div class="block-meta">
+						<?php echo g7_date_meta(); ?>
+					</div>
+					<div class="block-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 200); ?></div>
 				<?php $block_counter++; break; endwhile; ?>
 			</div>
 		</div>
@@ -49,6 +46,7 @@ list($image_w2, $image_h2) = g7_image_sizes('thumb');
 							<div class="block-meta">
 								<?php echo g7_date_meta(); ?>
 							</div>
+							<div class="block-excerpt-child"><?php echo wp_trim_words(get_the_excerpt(), 200); ?></div>
 						</div>
 						<div class="clear"></div>
 					</li>

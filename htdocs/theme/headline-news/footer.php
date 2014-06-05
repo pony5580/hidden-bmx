@@ -1,6 +1,7 @@
 		</main>
 		<?php if (get_theme_mod('footer_widget')) : ?>
-<!-- 			<div class="footer-widget">
+    <!--
+      <div class="footer-widget">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-xs-6"><?php dynamic_sidebar('footer1'); ?></div>
@@ -9,7 +10,8 @@
 						<div class="col-md-3 col-xs-6"><?php dynamic_sidebar('footer4'); ?></div>
 					</div>
 				</div>
-			</div> -->
+			</div>
+    -->
 		<?php endif; ?>
 		<section id="footer" class="ova_footer">
       <div class="container">
@@ -17,7 +19,7 @@
           <div class="col-lg-6 col-lg-offset-3">
             <div class="desc">
               <p>© 2014. HIDDEN-BMX.</p>
-              <p>PRODUCED BY </p>
+              <p class="produced">PRODUCED BY </p>
               <p><img src="/shared/images/common/footer_logo.png" height="35" width="216" alt="">
             </p></div>
             <div class="line">

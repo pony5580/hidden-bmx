@@ -11,10 +11,13 @@
 }
 
 #logo-image {
-  margin-top: 47px;
+  margin-top: 3px;
+}
+#logo-image a {
+  display: block;
 }
 #logo-image img {
-  height: 50px;
+  height: 86px;
 }
 
 #menu-global {
@@ -42,36 +45,34 @@
 /* page-header
 ===============================*/
 #page-header .header-top {
-  background: #000;
+  clear: both;
+  /*background: url('../images/bg/binding_dark.png');*/
+  background-color: #fff;
   height: 50px;
+  border-bottom: 1px solid #e5e5e5;
 }
 #page-header .header-top li {
   float:left;
   list-style: none;
   margin-right: 16px;
-  font-family: 'Oswald';
-}
-
-#page-header .header-top li a {
-  color: #fff;
 }
 
 
 #page-header .header-middle {
   clear: both;
-  min-height: 145px;
-  height: 145px;
+  padding: 15px 0px 15px;
   height: auto;
-  background-color: #141414; }
+  background: #000;
+  border-bottom: 1px solid #e5e5e5;
+}
   #page-header .header-middle .container {
     position: relative; }
   #page-header .header-middle .logo {
-    margin-top: 47px;
     float: left; }
   #page-header .header-middle .banner-adv {
     float: right;
     display: block;
-    margin-top: 27.5px; }
+    margin-top: 0px; }
 #page-header .header-bottom {
   background: #f12e2e;
   height: 45px; }
@@ -152,7 +153,7 @@
     font-size: 18px;
     margin-left: 20px; }
     #header-social-links a:hover {
-      color: #fff; }
+      color: #ec6c00; }
 
 /* menu second for screen lager 1023px */
 .menu-second.sf-menu {
@@ -527,7 +528,7 @@ section.ova_footer {
 }
 .ova_footer .row {
     text-align: center;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 10px;
 }
 .ova_footer .line {
@@ -542,8 +543,11 @@ section.ova_footer {
 }
 .ova_footer .desc {
     font-size: 18px;
-    font-weight: 300;
 }
+.ova_footer .produced {
+  font-size: 12px;
+}
+
 .ova_footer .desc i {
     margin-bottom: 12px;
 }
@@ -563,5 +567,9 @@ footer.global-footer {
 
 .flex-direction-nav,
 .flex-control-nav {
+  display: none;
+}
+
+.vcard {
   display: none;
 }

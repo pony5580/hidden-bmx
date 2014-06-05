@@ -14,12 +14,27 @@
 <body <?php body_class(); ?>>
 	<div id="wrapper">
 		<header id="page-header" class="clearfix">
+      
+
+      <div class="header-middle">
+        <div class="container">
+          <div id="logo-image" class="pull-left">
+            <a href="/"><img src="/shared/images/common/logo2-2.png" alt="HIDDEN BMX"></a>
+          </div>
+
+          <div id="top-banner" class="banner-adv pull-right">
+            <a target="_blank" href="">
+              <img src="/shared/images/banner/Top-banner_sample.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
       <div class="header-top">
         <div class="container">
-        	<?php echo g7_menu('mainmenu'); ?>
+          <?php echo g7_menu('mainmenu'); ?>
 
          <!--  <ul id="menu-global">
-          	
+            
             <li id="menu-item-1" class="menu-item">
               <a href="">TOP</a>
             </li>
@@ -59,30 +74,17 @@
                 <i class="fa fa-twitter"></i>
               </a>
             </li>
-            <li>
+           <!--  <li>
               <a class="kopa-social-link" href="http://youtube.com" target="_blank" title="Youtube" rel="nofollow">
                 <i class="fa fa-youtube"></i>
               </a>
-            </li>
+            </li> -->
             <li>
               <a class="kopa-social-link" href="" target="_blank" title="RSS" rel="nofollow">
                 <i class="fa fa-rss"></i>
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div class="header-middle">
-        <div class="container">
-          <div id="logo-image" class="pull-left">
-            <a href="/"><img src="shared/images/common/logo.png" height="20" alt=""></a>
-          </div>
-
-          <div id="top-banner" class="banner-adv pull-right">
-            <a target="_blank" href="">
-              <img src="/shared/images/banner/Top-banner_sample.jpg" alt=""></a>
-          </div>
         </div>
       </div>
     </header>

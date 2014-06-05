@@ -28,7 +28,7 @@ list($image_w, $image_h) = g7_image_sizes('small');
 						</span>
 						| <?php _e('by', 'g7theme'); ?> <?php echo g7_author_meta(); ?>
 					</div>
-					<div class="block-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 15); ?></div>
+					<div class="block-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 200); ?></div>
 				</div>
 				<div class="clear"></div>
 			</li>
