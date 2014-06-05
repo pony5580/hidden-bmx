@@ -15,3 +15,4 @@ _files/
 node_modules
 htdocs/__CMS/
 htdocs/CMS/
+.sass-cache/
