@@ -87,6 +87,7 @@ if (!function_exists('g7_theme_setup')) {
 			'quote',
 			'video',
 			'audio',
+			'interview',
 		));
 	}
 	add_action('after_setup_theme', 'g7_theme_setup');
@@ -164,8 +165,9 @@ if (!function_exists('g7_styles')) {
 		wp_enqueue_style('font-awesome', PARENT_URL . '/css/font-awesome.min.css');
 		wp_enqueue_style('font-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic&subset=latin,cyrillic');
 		wp_enqueue_style('font-roboto-condensed', '//fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic');
-		// wp_enqueue_style('font-Jura', '//fonts.googleapis.com/css?family=Jura:400,600');
-		wp_enqueue_style('font-Oswald', '//fonts.googleapis.com/css?family=Oswald');
+		wp_enqueue_style('font-roboto-slab', '//fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+		// wp_enqueue_style('font-Oswald', '//fonts.googleapis.com/css?family=Oswald');
+
 
 		wp_enqueue_style('main-style', get_stylesheet_uri());
 		if (g7_show_featured() || is_page_template('page-builder.php')) {

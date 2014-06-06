@@ -39,45 +39,53 @@ switch (get_post_format()) {
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/<?php echo $schema; ?>">
 
-	<header class="entry-header">
-		<?php if (get_post_format() == 'quote') : ?>
-			<h1 class="entry-title">
-				<i class="fa fa-quote-left"></i>
-				<?php the_title(); ?>
-				<i class="fa fa-quote-right"></i>
-			</h1>
-		<?php else : ?>
-			<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
-		<?php endif; ?>
-
-		<div class="entry-meta">
-			<?php echo $entry_meta; ?>
-			<?php edit_post_link(' | <i class="fa fa-pencil-square-o"></i> ' . __('Edit', 'g7theme'), '<span>', '</span>'); ?>
-		</div>
-
-		<?php if (get_post_format() == 'video' && !empty($video_embed)) : ?>
-
+	<?php if (get_post_format() == 'video' && !empty($video_embed)) : ?>
+		<header class="entry-header">
+			<h1 class="entry-title-category" itemprop="name">Video</h1>
 			<div class="post-video">
 				<?php echo $video; ?>
 			</div>
+			<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
+		</header>
+	<?php else : ?>
 
-		<?php elseif (get_post_format() == 'audio' && !empty($audio_embed)) : ?>
-
-			<div class="post-audio">
-				<?php echo $audio; ?>
-			</div>
-
-		<?php else : ?>
-
-			<?php if (get_theme_mod('single_featured_image', 1) && (has_post_thumbnail())) : ?>
-				<div class="entry-image">
-					<?php echo g7_image($image_w, null, false); ?>
-				</div>
+		<header class="entry-header">
+			<?php if (get_post_format() == 'quote') : ?>
+				<h1 class="entry-title">
+					<i class="fa fa-quote-left"></i>
+					<?php the_title(); ?>
+					<i class="fa fa-quote-right"></i>
+				</h1>
+			<?php else : ?>
+				<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
 			<?php endif; ?>
 
-		<?php endif; ?>
+			<div class="entry-meta">
+				<?php echo $entry_meta; ?>
+				<?php edit_post_link(' | <i class="fa fa-pencil-square-o"></i> ' . __('Edit', 'g7theme'), '<span>', '</span>'); ?>
+			</div>
 
-	</header>
+			<?php if (get_post_format() == 'video' && !empty($video_embed)) : ?>
+
+			<?php elseif (get_post_format() == 'audio' && !empty($audio_embed)) : ?>
+
+				<div class="post-audio">
+					<?php echo $audio; ?>
+				</div>
+
+			<?php else : ?>
+
+				<?php if (get_theme_mod('single_featured_image', 1) && (has_post_thumbnail())) : ?>
+					<div class="entry-image">
+						<?php echo g7_image($image_w, null, false); ?>
+					</div>
+				<?php endif; ?>
+
+			<?php endif; ?>
+
+		</header>
+
+	<?php endif; ?>
 
 	<div class="entry-content" itemprop="<?php echo strtolower($schema); ?>Body">
 		<?php the_content(); ?>

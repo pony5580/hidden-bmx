@@ -16,14 +16,13 @@
 		<section id="footer" class="ova_footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-lg-offset-3">
+          <div class="col-md-12">
             <div class="desc">
               <p>© 2014. HIDDEN-BMX.</p>
               <p class="produced">PRODUCED BY </p>
-              <p><img src="/shared/images/common/footer_logo.png" height="35" width="216" alt="">
+              <p class="footer-img"><img src="/shared/images/common/footer_logo.png" height="35" width="216" alt=""></p>
             </p></div>
-            <div class="line">
-              <br></div>
+
             <a class="scrollup" href="#" data-mce-href="#" style="display: inline-block;"> <i class="fa fa-chevron-up"></i>
             </a>
           </div>
