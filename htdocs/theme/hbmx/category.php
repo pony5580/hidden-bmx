@@ -18,10 +18,27 @@ get_header();
 
 	<?php if (have_posts()) : ?>
 
-		<div class="posts blog-small">
-			<?php while (have_posts()) : the_post(); ?>
+		
+			<?php if ($category_name != 'news') : ?>
+			<div class="posts blog-grid">
+				<header class="category-header">
+					<h1 class="category-title" itemprop="name"><?php echo $category_name ?></h1>
+					<div class="category-discription">
+						<?php echo $category_description ?>
+					</div>
+				</header>
+				<div class="row">
+				<?php while (have_posts()) : the_post(); ?>
+				<?php get_template_part('content', 'grid'); ?>
+				<?php endwhile; ?>
+				</div>
+			<?php else : ?>
+			<div class="posts blog-small">
+				<?php while (have_posts()) : the_post(); ?>
 				<?php get_template_part('content', 'small'); ?>
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
+			
 		</div>
 
 		<?php g7_pagination(); ?>

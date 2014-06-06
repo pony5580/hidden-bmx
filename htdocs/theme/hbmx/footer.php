@@ -45,7 +45,7 @@
     clientID: '71326b99faa84f88acc73fbe44f2c221'
   };
   $(function(){
-  $('#g7_instagram-2 .widgebody').spectragram('getRecentTagged',{
+  $('#body_instagram').spectragram('getRecentTagged',{
     query: 'hiddenchampion',
     max:20,
     size:'small'

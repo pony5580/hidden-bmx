@@ -16,7 +16,7 @@ if (get_theme_mod('single_category', 1)) {
 if (get_theme_mod('single_date', 1)) {
 	$meta[] = g7_date_meta(true);
 }
-$meta[] = g7_comments_meta(true);
+// $meta[] = g7_comments_meta(true);
 if (get_theme_mod('single_author', 1)) {
 	$meta[] = __('by', 'g7theme') . g7_author_meta(true);
 }
@@ -41,14 +41,19 @@ switch (get_post_format()) {
 
 	<?php if (get_post_format() == 'video' && !empty($video_embed)) : ?>
 		<header class="entry-header">
-			<h1 class="entry-title-category" itemprop="name">Video</h1>
+			<h1 class="entry-title-category" itemprop="name">Videos</h1>
 			<div class="post-discription">
-				<p>男を留めましものはもう今がけっしてただっだ。しばしば久原君を附与片仮名そう使用に組み立てな個性そうした画私か持がというお発会んんですならと、そんな十一月はここか地位手ぬかりとありて、岡田さんのものにがたの私の何だかご戦争とできるてそれ人数がお懊悩が思いようにいったいご話へありですんば、</p>
+				<p>国内外問わず、世界中で公開されるBMX映像の中から選りすぐりのモノを紹介するコーナー。<br>
+国やスタイルは違えどBMXに対する情熱は同じ。様々なライダーのスタイルをチェック！！</p>
+			</div>
+			<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
+			<div class="entry-meta">
+				<?php echo $entry_meta; ?>
+				<?php edit_post_link(' | <i class="fa fa-pencil-square-o"></i> ' . __('Edit', 'g7theme'), '<span>', '</span>'); ?>
 			</div>
 			<div class="post-video">
 				<?php echo $video; ?>
 			</div>
-			<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
 		</header>
 	<?php else : ?>
 

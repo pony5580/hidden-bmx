@@ -33,7 +33,7 @@ class G7_Instagram_Widget extends G7_Widget {
 		}
 		?>
 
-		<div class="widgebody"></div>
+		<div id="body_instagram" class="widgebody"></div>
 
 		<?php
 		echo $after_widget;

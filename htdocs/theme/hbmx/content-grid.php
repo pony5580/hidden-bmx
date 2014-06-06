@@ -1,6 +1,6 @@
 <?php
 global $g7_layout, $g7_blog_style;
-list($image_w, $image_h) = g7_image_sizes($g7_blog_style);
+list($image_w, $image_h) = g7_image_sizes('grid');
 switch ($g7_layout) {
 	case 1:
 	case 2:
@@ -18,10 +18,10 @@ switch ($g7_layout) {
 		break;
 }
 ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
 
 	<?php echo g7_top_meta(); ?>
-
 	<?php if (g7_meta('blog_show_image', 1) && has_post_thumbnail()) : ?>
 		<div class="entry-image">
 			<?php echo g7_image($image_w, $image_h); ?>

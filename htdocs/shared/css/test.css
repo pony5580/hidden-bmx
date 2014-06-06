@@ -49,8 +49,12 @@
   /*background: url('../images/bg/binding_dark.png');*/
   background-color: #fff;
   height: 50px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #dbdbdb;
 }
+.home #page-header .header-top {
+  border-bottom: none;
+}
+
 #page-header .header-top li {
   float:left;
   list-style: none;
@@ -63,7 +67,7 @@
   padding: 15px 0px 15px;
   height: auto;
   background: #000;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #dbdbdb;
 }
   #page-header .header-middle .container {
     position: relative; }
