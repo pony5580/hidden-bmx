@@ -732,7 +732,6 @@ input:-webkit-autofill {
 /* line 45, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 #header-global {
   width: 100%;
-  position: fixed;
   background-color: #FFF;
   margin-bottom: 0px;
   z-index: 1000;
@@ -743,7 +742,7 @@ input:-webkit-autofill {
 #header-global #logo {
   width: 0 auto;
   text-align: center;
-  padding: 12px;
+  padding: 100px;
   display: block;
   background-color: #000;
 }
@@ -774,10 +773,20 @@ input:-webkit-autofill {
   text-align: center;
 }
 
-/* line 86, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
-.bs-docs-header {
-  padding-top: 80px;
+.header-header {
+  padding-bottom: 100px;
 }
+
+.copy {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #333;
+  font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+}
+
+/* line 86, /Users/pony/proj/local/hidden-bmx/htdocs_src/shared/scss/core/_layout.scss */
 
 /* ==============
     Contents
