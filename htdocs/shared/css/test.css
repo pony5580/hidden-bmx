@@ -522,6 +522,7 @@ height: 60px;
 section.ova_footer {
     padding-top: 50px;
     padding-bottom: 50px;
+    border-top: 1px solid #e5e5e5;
 }
 .ova_footer {
     background: url(../images/common/light-grey-noise.gif);
