@@ -42,6 +42,9 @@ switch (get_post_format()) {
 	<?php if (get_post_format() == 'video' && !empty($video_embed)) : ?>
 		<header class="entry-header">
 			<h1 class="entry-title-category" itemprop="name">Video</h1>
+			<div class="post-discription">
+				<p>男を留めましものはもう今がけっしてただっだ。しばしば久原君を附与片仮名そう使用に組み立てな個性そうした画私か持がというお発会んんですならと、そんな十一月はここか地位手ぬかりとありて、岡田さんのものにがたの私の何だかご戦争とできるてそれ人数がお懊悩が思いようにいったいご話へありですんば、</p>
+			</div>
 			<div class="post-video">
 				<?php echo $video; ?>
 			</div>
