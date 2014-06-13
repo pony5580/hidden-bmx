@@ -33,13 +33,13 @@
 		/**
 		 * add prettyPhoto call if plugin included
 		 */
-		if ($.fn.prettyPhoto) {
-			$("a[data-rel^='prettyPhoto']").prettyPhoto({
-				theme: 'pp_default',
-				social_tools: false,
-				hook: 'data-rel'
-			});
-		}
+		// if ($.fn.prettyPhoto) {
+		// 	$("a[data-rel^='prettyPhoto']").prettyPhoto({
+		// 		theme: 'pp_default',
+		// 		social_tools: false,
+		// 		hook: 'data-rel'
+		// 	});
+		// }
 
 		/**
 		 * contact widget validation and submit action
@@ -109,9 +109,9 @@
 		/**
 		 * add news ticker
 		 */
-		if ($.fn.liScroll) {
-			$('.ticker').liScroll({showControls:false});
-		}
+		// if ($.fn.liScroll) {
+		// 	$('.ticker').liScroll({showControls:false});
+		// }
 
 		/**
 		 * add flex slider call if plugin included
@@ -148,6 +148,31 @@
 			});
 		}
 
+		appendNewIcon('.entry-date time', 7);
+
 	});
+
+
+  /**
+   * [appendNewIcon new icon set to NEWS page ]
+   * @param  {String} dateTarget   [jQuery selector string , it must has "data-rtime"]
+   * @param  {Number} expire       [expire days]
+   */
+   function appendNewIcon(dateTarget, expire) {
+    var $dateTarget = $(dateTarget);
+    if($dateTarget.length === 0) return;
+
+    var now = new Date();
+    now.setDate(now.getDate() - expire );
+    now = Math.floor(now.getTime() / 1000);
+
+    $dateTarget.each(function(index, val) {
+      var $this = $(val)
+      var time = Date.parse($this.attr('datetime')) / 1000 ;
+      if( time >= now ) {
+        $this.append('<i class="new">NEW</i>');
+      }
+    });
+  };
 
 })(jQuery);

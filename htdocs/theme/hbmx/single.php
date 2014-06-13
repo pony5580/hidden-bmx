@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_template_part('content', 'video'); ?>
+
 <?php get_template_part('wrapper', 'start'); ?>
 
 	<?php while (have_posts()) : the_post(); ?>

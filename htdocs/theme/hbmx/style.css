@@ -216,9 +216,10 @@ body.custom-background.stretched {
 
 main {
 	margin-bottom: 35px;
+	padding-top: 35px;
 }
 main > .container {
-	margin-top: 35px;
+	margin-top: 0px;
 }
 .right-sidebar .content {
 	border-right: 1px solid #dbdbdb;
@@ -812,6 +813,7 @@ main > .container {
 }
 
 .next-prev {
+	display: none;
 	font-size: 16px;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
@@ -1511,12 +1513,27 @@ article.page > .entry-footer {
 	margin: 0;
 }
 
+#video-header .entry-header{
+	position: relative;
+}
+
+#video-header .entry-header .entry-meta {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -7px;
+}
+
+.single .format-video .entry-content {
+	margin-top: 0px;
+}
+
 .post-video {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 }
 .post-video iframe {
@@ -1731,6 +1748,11 @@ article.page > .entry-footer {
 	font-size: 10px;
 	/*font-weight: 700;*/
 	text-transform: uppercase;
+}
+.entry-date i.new {
+	color: #ff0000;
+	font-weight: bold;
+	padding-left: 5px;
 }
 .widget_g7_posts > ul > li,
 .widget_g7_reviews > ul > li,

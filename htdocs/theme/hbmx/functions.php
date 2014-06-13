@@ -908,7 +908,7 @@ if (!function_exists('g7_date_meta')) {
 				</a>
 			</span>',
 			get_permalink(),
-			get_the_time('Y-m-d H:i:s'),
+			get_the_time('Y/m/d H:i:s'),
 			$schema ? ' itemprop="datePublished"' : '',
 			get_the_time(get_option('date_format'))
 		);
@@ -1262,3 +1262,16 @@ if (!function_exists('g7_get_attachment_link')) {
 		add_filter('wp_get_attachment_link', 'g7_get_attachment_link');
 	}
 }
+
+
+function fb_home_image( $tags ) {
+    if ( is_home() || is_front_page() ) {
+        // Remove the default blank image added by Jetpack
+        unset( $tags['og:image'] );
+ 
+        $fb_home_img = $_SERVER['SERVER_NAME'] . '/shared/images/common/fb.png';
+        $tags['og:image'] = esc_url( $fb_home_img );
+    }
+    return $tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );

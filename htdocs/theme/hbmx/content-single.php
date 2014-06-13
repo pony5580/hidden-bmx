@@ -40,21 +40,7 @@ switch (get_post_format()) {
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/<?php echo $schema; ?>">
 
 	<?php if (get_post_format() == 'video' && !empty($video_embed)) : ?>
-		<header class="entry-header">
-			<h1 class="entry-title-category" itemprop="name">Videos</h1>
-			<div class="post-discription">
-				<p>国内外問わず、世界中で公開されるBMX映像の中から選りすぐりのモノを紹介するコーナー。<br>
-国やスタイルは違えどBMXに対する情熱は同じ。様々なライダーのスタイルをチェック！！</p>
-			</div>
-			<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
-			<div class="entry-meta">
-				<?php echo $entry_meta; ?>
-				<?php edit_post_link(' | <i class="fa fa-pencil-square-o"></i> ' . __('Edit', 'g7theme'), '<span>', '</span>'); ?>
-			</div>
-			<div class="post-video">
-				<?php echo $video; ?>
-			</div>
-		</header>
+
 	<?php else : ?>
 
 		<header class="entry-header">
